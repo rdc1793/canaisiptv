@@ -4,37 +4,37 @@
 http://177.11.96.110:9080/hls/sictv.m3u8 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", RECORD NEWS
-https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8 
+http://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", RECORDTV
-https://playplusspo-lh.akamaihd.net/i/pp_sp@350176/index_480_av-p.m3u8?sd=10&rebase=on 
+http://playplusspo-lh.akamaihd.net/i/pp_sp@350176/index_480_av-p.m3u8?sd=10&rebase=on 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", REDE TV
-https://hls.brasilstream.com.br/live/redetv/redetv/index.m3u8?token=5874329047397081000 
+http://hls.brasilstream.com.br/live/redetv/redetv/index.m3u8?token=5874329047397081000 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", GOSPEL MUSIC TELEVISION
-https://stmv1.srvstm.com/gmusic/gmusic/chunklist_w1142859219.m3u8  
+http://stmv1.srvstm.com/gmusic/gmusic/chunklist_w1142859219.m3u8  
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", SBT
-https://5a2b083e9f360.streamlock.net/bemtv/bemtv.sdp/playlist.m3u8 
+http://5a2b083e9f360.streamlock.net/bemtv/bemtv.sdp/playlist.m3u8 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", BAND
-https://5cf4a2c2512a2.streamlock.net/rbatv/rbatv/playlist.m3u8  
+http://5cf4a2c2512a2.streamlock.net/rbatv/rbatv/playlist.m3u8  
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", TV CULTURA
-https://5ee90cb3a07bb.streamlock.net/live-fertel/live-fertel/playlist-480p.m3u8 
+http://5ee90cb3a07bb.streamlock.net/live-fertel/live-fertel/playlist-480p.m3u8 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", GLOBO 
 http://50.7.34.155:2200/BR/Globo_HD_RJ-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", CANAL RURAL
-https://5f984b2feeeb4.streamlock.net/crur/smil:canalrural.smil/playlist.m3u8 
+http://5f984b2feeeb4.streamlock.net/crur/smil:canalrural.smil/playlist.m3u8 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", TV BRASIL
-https://eduplay-maestro.prd.apps.kloud.rnp.br/route/channel39285/index.m3u8?s=aHR0cHM6Ly9tZWRpYS1wcmQuZWR1cGxheS5ybnAuYnIvbWVkaWEvY2hhbm5lbDM5Mjg1L2luZGV4Lm0zdTg_eD0xJm09TDNuSnB1MExfSElNUXJzcVVTU2ZCUQ&x=1&p=1&m=8xYHT-eKYjbsb_GOLzyKFQ 
+http://eduplay-maestro.prd.apps.kloud.rnp.br/route/channel39285/index.m3u8?s=aHR0cHM6Ly9tZWRpYS1wcmQuZWR1cGxheS5ybnAuYnIvbWVkaWEvY2hhbm5lbDM5Mjg1L2luZGV4Lm0zdTg_eD0xJm09TDNuSnB1MExfSElNUXJzcVVTU2ZCUQ&x=1&p=1&m=8xYHT-eKYjbsb_GOLzyKFQ 
 
 #EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", TV CAMARA
-https://stream3.camara.gov.br/tv1/manifest.m3u8 
+http://stream3.camara.gov.br/tv1/manifest.m3u8 
 
 
 #EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", ANIMAL PLANET
