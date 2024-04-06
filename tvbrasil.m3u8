@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=871507
-http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=576951
 http://stream.ads.ottera.tv/playlist.m3u8?network_id=4554
+#EXT-X-STREAM-INF:BANDWIDTH=576951
+http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
