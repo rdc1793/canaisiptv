@@ -7,10 +7,10 @@
 # E assim por diante
 
 # Primeiro link
-#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=854x480,CODECS="avc1.66.30,mp4a.40.2
 http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
 
 # Segundo link
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480,CODECS="avc1.66.30,mp4a.40.2
 https://cdn.jmvstream.com/w/AVJ-11063/playlist/playlist.m3u8
 
