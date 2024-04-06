@@ -5,4 +5,4 @@ https://cdn-3.nxplay.com.br/TNT/index.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=871507,RESOLUTION=854x480,CODECS="avc1.66.30,mp4a.40.2"
 https://cdn-3.nxplay.com.br/TNT_TK/index.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=576951,RESOLUTION=640x360,CODECS="avc1.66.30,mp4a.40.2"
-http://138.255.0.30:80/TNT/index.m3u8
+https://cdn-1.nxplay.com.br/TNT_TK/index.m3u8
