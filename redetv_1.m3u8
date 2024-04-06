@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=1393632,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
-https://59f1cbe63db89.streamlock.net:1443/tvpampa/_definst_/tvpampa/playlist.m3u8
+http://59f1cbe63db89.streamlock.net:1443/tvpampa/_definst_/tvpampa/playlist.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=871507,RESOLUTION=854x480,CODECS="avc1.66.30,mp4a.40.2"
-https://tv02.zas.media:1936/redetvparana/redetvparana/playlist.m3u8
+http://tv02.zas.media:1936/redetvparana/redetvparana/playlist.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=576951,RESOLUTION=640x360,CODECS="avc1.66.30,mp4a.40.2"
-https://59f1cbe63db89.streamlock.net:1443/redetvro/_definst_/redetvro/playlist-360p.m3u8
+http://59f1cbe63db89.streamlock.net:1443/redetvro/_definst_/redetvro/playlist-360p.m3u8
