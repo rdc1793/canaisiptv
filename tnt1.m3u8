@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="TNT 1" tvg-name="TNT 1" tvg-logo="",TNT 1
+https://cdn-3.nxplay.com.br/TNT/index.m3u8
+#EXTINF:-1 tvg-id="TNT 2" tvg-name="TNT 2" tvg-logo="",TNT 2
+https://cdn-3.nxplay.com.br/TNT_TK/index.m3u8
+#EXTINF:-1 tvg-id="TNT 3" tvg-name="TNT 3" tvg-logo="",TNT 3
+https://cdn-1.nxplay.com.br/TNT_TK/index.m3u8
