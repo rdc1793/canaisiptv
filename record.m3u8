@@ -1,10 +1,10 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="canal1" tvg-name="Canal 1" tvg-logo="logo.png" group-title="Canais",Canal 1
-{{ exec("python processa_links_m3u8.py 'https://cdn-3.nxplay.com.br/RECORD_PAULISTA_PFZ_NXPLAY_01/index.m3u8'") }}
+https://cdn-3.nxplay.com.br/RECORD_PAULISTA_PFZ_NXPLAY_01/index.m3u8
 
 #EXTINF:-1 tvg-id="canal2" tvg-name="Canal 2" tvg-logo="logo.png" group-title="Canais",Canal 2
-{{ exec("python processa_links_m3u8.py 'https://cdn.jmvstream.com/w/LVW-10841/LVW10841_mT77z9o2cP/chunklist.m3u8'") }}
+https://cdn.jmvstream.com/w/LVW-10841/LVW10841_mT77z9o2cP/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="canal3" tvg-name="Canal 3" tvg-logo="logo.png" group-title="Canais",Canal 3
-{{ exec("python processa_links_m3u8.py 'https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8'") }}
+https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
