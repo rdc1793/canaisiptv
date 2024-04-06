@@ -2,6 +2,6 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480,CODECS="avc1.64001f,mp4a.40.2"
-http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
+https://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=500000,RESOLUTION=640x360,CODECS="avc1.64001f,mp4a.40.2"
 https://cdn.jmvstream.com/w/AVJ-11063/playlist/playlist.m3u8
