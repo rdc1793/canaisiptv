@@ -1,0 +1,33 @@
+#EXTM3U
+#EXT-X-VERSION:3
+
+# Variantes de transmissão 720p
+# Primeira opção para 720p
+# Se não funcionar, o player tentará a segunda opção
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+https://cdn-3.nxplay.com.br/TNT/index.m3u8
+
+# Segunda opção para 720p
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+https://cdn-3.nxplay.com.br/TNT_TK/index.m3u8
+
+# Terceira opção para 720p
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+http://138.255.0.30:80/TNT/tracks-v1a1/mono.m3u8
+
+
+
+# Variantes de transmissão 480p
+# Primeira opção para 480p
+# Se não funcionar, o player tentará a segunda opção e assim por diante 
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480,CODECS="avc1.64001f,mp4a.40.2"
+https://cdn-3.nxplay.com.br/TNT/index.m3u8
+
+# Segunda opção para 480p
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480,CODECS="avc1.64001f,mp4a.40.2"
+https://cdn-3.nxplay.com.br/TNT_TK/index.m3u8
+
+# Terceira opção para 480p
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480,CODECS="avc1.64001f,mp4a.40.2"
+http://138.255.0.30:80/TNT/tracks-v1a1/mono.m3u8
+
