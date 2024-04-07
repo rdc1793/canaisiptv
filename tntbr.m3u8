@@ -3,7 +3,7 @@
 
 # Variantes de transmissão 720p
 # Primeira opção para 720p
-# Se não funcionar, o player tentará a segunda opção
+# Se não funcionar, o player tentará a segunda opção e assim por diante 
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
 https://cdn-3.nxplay.com.br/TNT/index.m3u8
 
