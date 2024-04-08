@@ -1,0 +1,6 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="globo" tvg-name="TV Globo SP" group-title="Canais Brasileiros", TV Globo SP
+https://cdn-1.nxplay.com.br/GLOBO_SP_TK/index.m3u8
+
+#EXTINF:-1 tvg-id="tvtem" tvg-name="TV TEM" group-title="Canais Brasileiros", TV TEM
+https://cdn-1.nxplay.com.br/TV_TEM_TK/index.m3u8
