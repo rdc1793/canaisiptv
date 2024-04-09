@@ -1,0 +1,15 @@
+
+#EXTM3U
+#EXT-X-VERSION:3
+
+# Variante de transmissão 1 (Vídeo 1)
+#EXT-X-STREAM-INF:BANDWIDTH=2000000
+https://cdn-3.nxplay.com.br/TNT/index.m3u8
+
+# Variante de transmissão 2 (Vídeo 2)
+#EXT-X-STREAM-INF:BANDWIDTH=2000000
+https://cdn-3.nxplay.com.br/TNT_TK/index.m3u8
+
+# Variante de transmissão 3 (Vídeo 3)
+#EXT-X-STREAM-INF:BANDWIDTH=2000000
+http://138.255.0.30:80/TNT/tracks-v1a1/mono.m3u8
