@@ -2,16 +2,12 @@
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://cdn-5.nxplay.com.br/TNT/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://cdn-2.nxplay.com.br/TNT/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://cdn-5.nxplay.com.br/TNT_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://cdn-2.nxplay.com.br/TNT_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720
 https://cdn-5.nxplay.com.br/TNT_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
-#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720
-https://cdn-2.nxplay.com.br/TNT_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720
 https://cdn-5.nxplay.com.br/TNT/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720
