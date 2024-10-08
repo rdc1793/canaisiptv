@@ -1,7 +1,5 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-http://216.230.233.87:80/m3u8/globorj.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://cdn-5.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://cdn-4.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
@@ -11,5 +9,17 @@ https://cdn-3.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7
 https://cdn-2.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://cdn-1.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-5.nxplay.com.br/TV_TEM_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-4.nxplay.com.br/TV_TEM_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-3.nxplay.com.br/TV_TEM_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-2.nxplay.com.br/TV_TEM_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-1.nxplay.com.br/TV_TEM_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+http://216.230.233.87:80/m3u8/globorj.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720
