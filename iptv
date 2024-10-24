@@ -1,111 +1,29 @@
+ttt
 #EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXT-X-VERSION:3
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10.0,
+http://cdn22.cc:80/Magalhaesps/101280/429.ts
+#EXT-X-ENDLIST
 
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", REDE BRASIL
-http://177.11.96.110:9080/hls/sictv.m3u8 
+hjh  
 
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", RECORD NEWS
-http://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8 
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-2.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-1.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-1.nxplay.com.br/TV_TEM_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-1.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-4.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cdn-3.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
 
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", RECORDTV
-http://playplusspo-lh.akamaihd.net/i/pp_sp@350176/index_480_av-p.m3u8?sd=10&rebase=on 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", REDE TV
-http://hls.brasilstream.com.br/live/redetv/redetv/index.m3u8?token=5874329047397081000 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", GOSPEL MUSIC TELEVISION
-http://stmv1.srvstm.com/gmusic/gmusic/chunklist_w1142859219.m3u8  
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", SBT
-http://5a2b083e9f360.streamlock.net/bemtv/bemtv.sdp/playlist.m3u8 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", BAND
-http://5cf4a2c2512a2.streamlock.net/rbatv/rbatv/playlist.m3u8  
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", TV CULTURA
-http://5ee90cb3a07bb.streamlock.net/live-fertel/live-fertel/playlist-480p.m3u8 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", GLOBO 
-http://50.7.34.155:2200/BR/Globo_HD_RJ-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", CANAL RURAL
-http://5f984b2feeeb4.streamlock.net/crur/smil:canalrural.smil/playlist.m3u8 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", TV BRASIL
-http://eduplay-maestro.prd.apps.kloud.rnp.br/route/channel39285/index.m3u8?s=aHR0cHM6Ly9tZWRpYS1wcmQuZWR1cGxheS5ybnAuYnIvbWVkaWEvY2hhbm5lbDM5Mjg1L2luZGV4Lm0zdTg_eD0xJm09TDNuSnB1MExfSElNUXJzcVVTU2ZCUQ&x=1&p=1&m=8xYHT-eKYjbsb_GOLzyKFQ 
-
-#EXTINF:-1 group-title="CANAIS ABERTOS" tvg-logo="", TV CAMARA
-http://stream3.camara.gov.br/tv1/manifest.m3u8 
-
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", ANIMAL PLANET
-http://50.7.34.155:2200/BR/Animal_Planet_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", ESPN
-http://50.7.34.155:2200/BR/ESPN_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", ESPN BRASIL
-http://50.7.34.155:2200/BR/ESPN_Brasil_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", SPORTV
-http://50.7.34.155:2200/BR/Sportv_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", TNT
-http://50.7.34.155:2200/BR/TNT_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", STAR CHANNEL
-http://50.7.34.155:2200/BR/Fox_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", WARNER CHANNEL
-http://50.7.34.155:2200/BR/Warner_Channel_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", NICKELODEON
-http://50.7.34.155:2200/BR/Nickelodeon_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", CNN BRASIL
-http://50.7.34.155:2200/BR/CNN_Brasil_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", MTV
-http://50.7.34.155:2200/BR/MTV_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", MAIS NA TELA
-http://50.7.34.155:2200/BR/Mais_Globosat_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", MULTISHOW
-http://50.7.34.155:2200/BR/Multishow_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", VIVA
-http://50.7.34.155:2200/BR/Viva_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", LOOP TV 80S
-http://50.7.34.155:2200/BR/Viva_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", DISNEY XD
-http://50.7.34.155:2200/BR/disneyxd-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", Discovery Science
-http://50.7.34.155:2200/BR/Discovery_Science_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", SONY CHANNEL
-http://50.7.34.155:2200/BR/Canal_Sony_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", TCM 
-http://50.7.34.155:2200/BR/tcm-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", COMBATE 
-http://50.7.34.155:2200/BR/Combate_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-#EXTINF:-1 group-title="CANAIS PAGOS" tvg-logo="", BAND SPORTS  
-http://50.7.34.155:2200/BR/Band_Sports_HD-br/tracks-v1a1/mono.m3u8?PEDROJUNIORTUTORIAIS 
-
-
-
-http://tvconquistalrv.duckdns.org:8080/hls/tvconquistalrv.m3u8?bitrate=1000000
-
-
-
-
-
-
-
-
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1280x720
 
