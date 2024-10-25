@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://abc.embedmax.site/Megapix/tracks-v1a1/mono.m3u8
+https://new.m3u8.one/megapix/tracks-v1a1/mono.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 http://216.230.233.87:80/m3u8/megapix.m3u8
 
