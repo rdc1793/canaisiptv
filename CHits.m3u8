@@ -1,0 +1,3 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://v01.taaqui.org/joel/joel/chunklist.m3u8
