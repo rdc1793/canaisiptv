@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Estilo
-  const estilo = document.createElement("style");
-  estilo.textContent = `
+  const app = document.getElementById('app');
+
+  // Insere o CSS dentro de um <style> no <head>
+  const style = document.createElement('style');
+  style.textContent = `
     body {
       margin: 0;
       font-family: Arial, sans-serif;
     }
-
-    .btn-group a, .btn-group2 a {
-      background-color: #0431B4;
+    .btn-group a {
+      background-color:  #0431B4;
       color: white;
       padding: 10px 20px;
       text-align: justify;
@@ -20,35 +21,38 @@ document.addEventListener("DOMContentLoaded", function () {
       border-radius: 4px;
       width: 200px;
     }
-
-    .btn-group2 a {
-      background-color: #4CAF50;
-    }
-
     .btn-group a:hover {
       background-color: #0B3861;
     }
-
+    .btn-group2 a {
+      background-color:  #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: justify;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 4px 0;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 200px;
+    }
     .btn-group2 a:hover {
       background-color: #3e8e41;
     }
-
     #container {
       display: flex;
       flex-direction: row;
     }
-
     #canal-lista {
       overflow-y: auto;
       border-left: 0px solid #333;
     }
-
     .categoria {
       border-bottom: 1px solid #444;
     }
-
     .categoria-titulo {
-      background-color: #0431B4;
+      background-color:  #0431B4;
       color: white;
       padding: 10px 20px;
       text-align: justify;
@@ -60,31 +64,25 @@ document.addEventListener("DOMContentLoaded", function () {
       border-radius: 4px;
       width: 200px;
     }
-
     .categoria-titulo:hover {
       background-color: #0B3861;
     }
-
     .categoria-itens {
       display: none;
       padding-left: 10px;
       width: 200px;
     }
-
     .canal-item {
       padding: 10px;
       border-bottom: 1px solid #444;
       cursor: pointer;
       width: 200px;
     }
-
     .canal-item:hover,
     .canal-item.ativo {
       background: #0431B4;
     }
-
-    #player-container,
-    #player {
+    #player-container {
       width: 700px;
       height: 460px;
       display: flex;
@@ -92,7 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
       justify-content: center;
       background: #000;
     }
-
+    #player {
+      width: 700px;
+      height: 460px;
+    }
     #voltar-topo {
       position: fixed;
       bottom: 20px;
@@ -105,74 +106,119 @@ document.addEventListener("DOMContentLoaded", function () {
       height: 50px;
       font-size: 20px;
       cursor: pointer;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
       z-index: 999;
       display: none;
       transition: opacity 0.3s;
     }
-
+    .btn-group a,
+    .btn-group2 a {
+      background-color: #0431B4;
+      color: white;
+      padding: 10px 20px;
+      text-align: justify;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 4px 0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-group2 a {
+      background-color: #4CAF50;
+    }
+    .btn-group a:hover {
+      background-color: #0B3861;
+    }
+    .btn-group2 a:hover {
+      background-color: #3e8e41;
+    }
     .imagem-fixada {
       position: fixed;
       top: 10px;
       right: 10px;
       z-index: 999;
     }
-
     .imagem-fixada img {
       width: 160px;
       height: 100%;
       border: 0px solid #fff;
     }
-
     .canal-item a {
       color: white;
       text-decoration: none;
     }
   `;
-  document.head.appendChild(estilo);
+  document.head.appendChild(style);
 
-  // HTML principal
-  const html = `
+  // Conteúdo HTML que vai para dentro da div#app
+  const htmlContent = `
     <div class="btn-group2">
-      <a href="https://canaissattv.blogspot.com/p/guia-de-programacao.html" target="epg">GUIA TV</a>
-    </div><br>
-
+      <a href="https://canaissattv.blogspot.com/p/guia-de-programacao.html"  target="epg">GUIA TV</a> 
+    </div>
+    
+    <br>
+    
     <div class="categoria-titulo">TNT</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/tnt-ao-vivo/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/tnt-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/tnt-ao-vivo/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/tnt-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
-
+    
     <div class="categoria-titulo">Sportv</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/sportv-online/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/sportv-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/sportv-online/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/sportv-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
-
+    
     <div class="categoria-titulo">ESPN</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/espn-ao-vivo-gratis/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/espn-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/espn-ao-vivo-gratis/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/espn-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
-
+    
     <div class="categoria-titulo">Discovery</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/discovery-channel-ao-vivo-gratis/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/discovery-channel-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/discovery-channel-ao-vivo-gratis/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/discovery-channel-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
-
+    
     <div class="categoria-titulo">Animal Planet</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/animal-planet-ao-vivo/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/animal-planet-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/animal-planet-ao-vivo/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/animal-planet-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
-
+    
     <div class="categoria-titulo">Multishow</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/multishow-ao-vivo/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/multishow-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/multishow-ao-vivo/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/multishow-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
-
+    
     <div class="btn-group">
       <a href="https://supertvaovivo.io/canal-off/">Off</a>
       <a href="https://supertvaovivo.io/assistir-sportv-3-ao-vivo-gratis/">Sportv 3</a>
@@ -235,13 +281,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <div class="categoria-titulo">Combate</div>
     <div class="categoria-itens">
-      <div class="canal-item"><div onclick="location.href='https://supertvaovivo.io/combate-ao-vivo/'">LINK 1</div></div>
-      <div class="canal-item"><div onclick="location.href='https://futemax.food/canal/combate-ao-vivo-em-hd/'">LINK 2</div></div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/combate-ao-vivo/'" target="_self">LINK 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/combate-ao-vivo-em-hd/'" target="_self">LINK 2</div>
+      </div>
     </div>
   `;
-  document.body.innerHTML += html;
 
-  // Função toggle das categorias
+  // Adiciona o conteúdo HTML dentro da div#app
+  app.innerHTML = htmlContent;
+
+  // Código para abrir/fechar categorias
   document.querySelectorAll(".categoria-titulo").forEach(titulo => {
     titulo.addEventListener("click", () => {
       const divItens = titulo.nextElementSibling;
@@ -251,10 +303,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Alerts
+  // Alerta informativo
   alert("RECOMENDÁVEL ACESSAR PELO APP 'WEB VIDEO CASTER'");
   alert("ATRAVÉS DO APP 'WEB VIDEO CASTER', NA FUNÇÃO 'IPTV', A LISTA DE CANAIS TAMBÉM PODE SER ACESSADA PELO LINK: 'https://abre.ai/mKVH'");
 
-  // Remover hash da URL
+  // history.replaceState para limpar #
   history.replaceState(null, null, "/#");
 });
