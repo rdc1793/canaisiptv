@@ -162,64 +162,78 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="categoria-titulo">TNT</div>
     <div class="categoria-itens">
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/tnt-ao-vivo/'" target="_self">OPÇÃO 1</div>
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/tnt-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/tnt-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
     <div class="categoria-titulo">Sportv</div>
     <div class="categoria-itens">
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/sportv-online/'" target="_self">OPÇÃO 1</div>
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/sportv-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/sportv-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
     <div class="categoria-titulo">ESPN</div>
     <div class="categoria-itens">
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/espn-ao-vivo-gratis/'" target="_self">OPÇÃO 1</div>
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/espn-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/espn-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
     <div class="categoria-titulo">Discovery</div>
     <div class="categoria-itens">
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/discovery-channel-ao-vivo-gratis/'" target="_self">OPÇÃO 1</div>
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/discovery-channel-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/discovery-channel-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
     <div class="categoria-titulo">Animal Planet</div>
     <div class="categoria-itens">
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/animal-planet-ao-vivo/'" target="_self">OPÇÃO 1</div>
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/animal-planet-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/animal-planet-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
     <div class="categoria-titulo">Multishow</div>
     <div class="categoria-itens">
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/multishow-ao-vivo/'" target="_self">OPÇÃO 1</div>
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/multishow-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/multishow-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+      </div>
+    </div>
+
+    <div class="categoria-titulo">Combate</div>
+    <div class="categoria-itens">
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/combate-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
     <div class="btn-group">
+      <a href="https://canais.redeitv.com.br/canal/urban-docs">Urban Docs</a>
+      <a href="https://tvsat05.blogspot.com/p/istv.html">TELEMUNDO</a>
+      <a href="https://cnnportugal.iol.pt/direto">CNN Portugal</a>
+
       <a href="https://supertvaovivo.io/canal-off/">Off</a>
       <a href="https://supertvaovivo.io/assistir-sportv-3-ao-vivo-gratis/">Sportv 3</a>
       <a href="https://supertvaovivo.io/sportv-2-online/">Sportv 2</a>
@@ -233,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="https://supertvaovivo.io/espn-2-ao-vivo/">ESPN 2</a>
       <a href="https://supertvaovivo.io/band-sports-ao-vivo/">BandSports</a>
       <a href="https://supertvaovivo.io/band-news/">BandNews</a>
-      <a href="https://canais.redeitv.com.br/canal/urban-docs">Urban Docs</a>
       <a href="https://supertvaovivo.io/discovery-theater/">Discovery Theater</a>
       <a href="https://supertvaovivo.io/discovery-world/">Discovery World</a>
       <a href="https://supertvaovivo.io/history-channel/">History</a>
@@ -248,8 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="https://supertvaovivo.io/universal-channel/">Universal</a>
       <a href="https://supertvaovivo.io/warner-channel-ao-vivo/">Warner</a>
       <a href="https://supertvaovivo.io/sony/">Sony</a>
-      <a href="https://tvsat05.blogspot.com/p/istv.html">TELEMUNDO</a>
-      <a href="https://cnnportugal.iol.pt/direto">CNN Portugal</a>
       <a href="https://supertvaovivo.io/axn/">AXN</a>
       <a href="https://supertvaovivo.io/tnt-novelas/">TNT Novelas</a>
       <a href="https://supertvaovivo.io/tnt-series-ao-vivo/">TNT Series</a>
@@ -279,15 +290,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="https://supertvaovivo.io/hbo-xtreme-online/">HBO Xtreme</a>
     </div>
 
-    <div class="categoria-titulo">Combate</div>
-    <div class="categoria-itens">
-      <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.io/combate-ao-vivo/'" target="_self">OPÇÃO 1</div>
-      </div>
-      <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/combate-ao-vivo-em-hd/'" target="_self">OPÇÃO 2</div>
-      </div>
-    </div>
   `;
 
   // Adiciona o conteúdo HTML dentro da div#app
