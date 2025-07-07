@@ -1,5 +1,8 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/chunklist_w749886712_b1155072.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://stmv7.samcast.com.br/sistemaencontrodasaguas/sistemaencontrodasaguas/chunklist.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
