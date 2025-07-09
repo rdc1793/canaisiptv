@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/tnt-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/tnt-ao-vivo/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/sportv-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/sportv-online/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/espn-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/espn-ao-vivo-gratis/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/discovery-channel-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/discovery-channel-ao-vivo-gratis/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/animal-planet-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/animal-planet-ao-vivo/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/multishow-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/multishow-ao-vivo/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
 
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://futemax.food/canal/combate-ao-vivo-em-hd/'" target="_self">OPÇÃO 1</div>
       </div>
       <div class="canal-item">
-        <div style="cursor: pointer;" onclick="location.href='#'" target="_self">OPÇÃO 2</div>
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/combate-ao-vivo/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
     
@@ -234,60 +234,44 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="https://tvsat05.blogspot.com/p/istv.html">TELEMUNDO</a>
       <a href="https://cnnportugal.iol.pt/direto">CNN Portugal</a>
 
-      <a href="https://supertvaovivo.io/canal-off/">Off</a>
-      <a href="https://supertvaovivo.io/assistir-sportv-3-ao-vivo-gratis/">Sportv 3</a>
-      <a href="https://supertvaovivo.io/sportv-2-online/">Sportv 2</a>
-      <a href="https://supertvaovivo.io/assistir-globo-news-ao-vivo-gratis/">GloboNews</a>
-      <a href="https://supertvaovivo.io/gnt-ao-vivo/">GNT</a>
-      <a href="https://supertvaovivo.io/e-entertainment-ao-vivo/">E!</a>
-      <a href="https://supertvaovivo.io/tlc-ao-vivo/">TLC</a>
-      <a href="https://supertvaovivo.io/arte-1-ao-vivo/">Arte 1</a>
-      <a href="https://supertvaovivo.io/discovery-home-health-ao-vivo/">Home & Health</a>
-      <a href="https://supertvaovivo.io/hgtv-ao-vivo/">HGTV</a>
-      <a href="https://supertvaovivo.io/espn-2-ao-vivo/">ESPN 2</a>
-      <a href="https://supertvaovivo.io/band-sports-ao-vivo/">BandSports</a>
-      <a href="https://supertvaovivo.io/band-news/">BandNews</a>
-      <a href="https://supertvaovivo.io/discovery-theater/">Discovery Theater</a>
-      <a href="https://supertvaovivo.io/discovery-world/">Discovery World</a>
-      <a href="https://supertvaovivo.io/history-channel/">History</a>
-      <a href="https://supertvaovivo.io/history-2-ao-vivo/">History 2</a>
-      <a href="https://supertvaovivo.io/discovery-turbo-ao-vivo/">Discovery Turbo</a>
-      <a href="https://supertvaovivo.io/discovery-science-ao-vivo/">Discovery Science</a>
-      <a href="https://supertvaovivo.io/discovery-kids-ao-vivo/">Discovery Kids</a>
-      <a href="https://supertvaovivo.io/cartoon-network-ao-vivo-gratis/">Cartoon Network</a>
-      <a href="https://supertvaovivo.io/adult-swim-tv/">Adult Swim</a>
-      <a href="https://supertvaovivo.io/bis-ao-vivo/">Bis</a>
-      <a href="https://supertvaovivo.io/mtv-ao-vivo-brasil/">MTV</a>
-      <a href="https://supertvaovivo.io/universal-channel/">Universal</a>
-      <a href="https://supertvaovivo.io/warner-channel-ao-vivo/">Warner</a>
-      <a href="https://supertvaovivo.io/sony/">Sony</a>
-      <a href="https://supertvaovivo.io/axn/">AXN</a>
-      <a href="https://supertvaovivo.io/tnt-novelas/">TNT Novelas</a>
-      <a href="https://supertvaovivo.io/tnt-series-ao-vivo/">TNT Series</a>
-      <a href="https://supertvaovivo.io/comedy-central-ao-vivo-gratis/">Comedy Central</a>
-      <a href="https://supertvaovivo.io/ae-mundo/">A&E</a>
-      <a href="https://supertvaovivo.io/investigacao-discovery/">Discovery ID</a>
+      <a href="https://supertvaovivo.fans/sportv-2-online/">Sportv 2</a>
+      <a href="https://supertvaovivo.fans/assistir-globo-news-ao-vivo-gratis/">GloboNews</a>
+      <a href="https://supertvaovivo.fans/gnt-ao-vivo/">GNT</a>
+      <a href="https://supertvaovivo.fans/e-entertainment-ao-vivo/">E!</a>
+      
+      <a href="https://supertvaovivo.fans/arte-1-ao-vivo/">Arte 1</a>
+      <a href="https://supertvaovivo.fans/discovery-home-health-ao-vivo/">Home & Health</a>
+      
+      <a href="https://supertvaovivo.fans/espn-2-ao-vivo/">ESPN 2</a>
+      <a href="https://supertvaovivo.fans/band-sports-ao-vivo/">BandSports</a>
+      <a href="https://supertvaovivo.fans/band-news/">BandNews</a>
+      
+      <a href="https://supertvaovivo.fans/history-channel/">History</a>
+      <a href="https://supertvaovivo.fans/history-2-ao-vivo/">History 2</a>
+      
+      
+      
+      
+      <a href="https://supertvaovivo.fans/mtv-ao-vivo-brasil/">MTV</a>
+      <a href="https://supertvaovivo.fans/universal-channel/">Universal</a>
+      <a href="https://supertvaovivo.fans/warner-channel-ao-vivo/">Warner</a>
+      <a href="https://supertvaovivo.fans/sony/">Sony</a>
+      <a href="https://supertvaovivo.fans/axn/">AXN</a>
+      
+      
+      
+      
       <a href="https://canais.redeitv.com.br/canal/central-tv-brasil">Central TV</a>
-      <a href="https://supertvaovivo.io/amc/">AMC</a>
-      <a href="https://supertvaovivo.io/megapix/">Megapix</a>
-      <a href="https://supertvaovivo.io/space/">Space</a>
-      <a href="https://supertvaovivo.io/cinemax/">Cinemax</a>
-      <a href="https://supertvaovivo.io/studio-universal/">Studio Universal</a>
-      <a href="https://supertvaovivo.io/paramount-channel/">Paramount</a>
-      <a href="https://supertvaovivo.io/telecine-premium/">Telecine Premium</a>
-      <a href="https://supertvaovivo.io/telecine-action/">Telecine Action</a>
-      <a href="https://supertvaovivo.io/telecine-touch/">Telecine Touch</a>
-      <a href="https://supertvaovivo.io/telecine-fun/">Telecine Fun</a>
-      <a href="https://supertvaovivo.io/telecine-pipoca/">Telecine Pipoca</a>
-      <a href="https://supertvaovivo.io/telecine-cult/">Telecine Cult</a>
-      <a href="https://supertvaovivo.io/hbo-ao-vivo-gratis/">HBO</a>
-      <a href="https://supertvaovivo.io/hbo-2/">HBO 2</a>
-      <a href="https://supertvaovivo.io/hbo-plus/">HBO+</a>
-      <a href="https://supertvaovivo.io/hbo-family/">HBO Family</a>
-      <a href="https://supertvaovivo.io/hbo-signature/">HBO Signature</a>
-      <a href="https://supertvaovivo.io/hbo-pop/">HBO Pop</a>
-      <a href="https://supertvaovivo.io/hbo-mundi/">HBO Mundi</a>
-      <a href="https://supertvaovivo.io/hbo-xtreme-online/">HBO Xtreme</a>
+      <a href="https://supertvaovivo.fans/amc/">AMC</a>
+      <a href="https://supertvaovivo.fans/megapix/">Megapix</a>
+      <a href="https://supertvaovivo.fans/space/">Space</a>
+      
+      
+      <a href="https://supertvaovivo.fans/telecine-premium/">Telecine Premium</a>
+      
+      <a href="https://supertvaovivo.fans/hbo-ao-vivo-gratis/">HBO</a>
+      <a href="https://supertvaovivo.fans/hbo-2/">HBO 2</a>
+      
     </div>
 
   `;
