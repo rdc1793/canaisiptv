@@ -178,6 +178,16 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/sportv-online/'" target="_self">OPÇÃO 2</div>
       </div>
     </div>
+
+     <div class="categoria-titulo">Sportv 2</div>
+    <div class="categoria-itens">
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://globoplay.globo.com/v/7690141/'" target="_self">OPÇÃO 1 (Globoplay)</div>
+      </div>
+      <div class="canal-item">
+        <div style="cursor: pointer;" onclick="location.href='https://supertvaovivo.fans/sportv-2-online/'" target="_self">OPÇÃO 2</div>
+      </div>
+    </div>
     
     <div class="categoria-titulo">ESPN</div>
     <div class="categoria-itens">
@@ -234,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="https://tvsat05.blogspot.com/p/istv.html">TELEMUNDO</a>
       <a href="https://cnnportugal.iol.pt/direto">CNN Portugal</a>
 
-      <a href="https://supertvaovivo.fans/sportv-2-online/">Sportv 2</a>
       <a href="https://supertvaovivo.fans/assistir-globo-news-ao-vivo-gratis/">GloboNews</a>
       <a href="https://supertvaovivo.fans/gnt-ao-vivo/">GNT</a>
       <a href="https://supertvaovivo.fans/e-entertainment-ao-vivo/">E!</a>
