@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://cdn-5.nxplay.com.br/HALLOMOVIES/tracks-v1a1/mono.m3u8
+https://amg00740-sofa-amg00740c13-tcl-us-8730.playouts.now.amagi.tv/360p-cc/index.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://cdn-3.nxplay.com.br/HALLOMOVIES/tracks-v1a1/mono.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480
+https://amg00740-sofa-amg00740c13-tcl-us-8730.playouts.now.amagi.tv/480p-cc/index.m3u8
