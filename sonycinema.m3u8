@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://spt-sonyoneclassicas-1-br.samsung.wurl.tv/1200.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=960x540
+https://spt-sonyoneclassicas-1-br.samsung.wurl.tv/2000.m3u8
