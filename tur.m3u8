@@ -1,5 +1,6 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
 https://amg24440-travelplus-amg24440c1-lg-br-6141.playouts.now.amagi.tv/360p-avc/index.m3u8
+
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=1024x576
 https://amg24440-travelplus-amg24440c1-lg-br-6141.playouts.now.amagi.tv/576p-avc/index.m3u8
