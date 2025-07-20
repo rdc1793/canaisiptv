@@ -1,10 +1,6 @@
 #EXTM3U
-
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://stmv7.samcast.com.br/sistemaencontrodasaguas/sistemaencontrodasaguas/chunklist.m3u8
+https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/chunklist_w278906608_b1155072.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://cdn.jmvstream.com/w/AVJ-12952/playlist/chunklist.m3u8
-
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://cdn2.easy.tv.br/tvbrasil/tracks-v1a1/mono.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=854x480
+https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/chunklist_w278906608_b1731072.m3u8
