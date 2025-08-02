@@ -7,3 +7,9 @@ https://d29h829bjuxghm.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae04
 
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=768x432
 https://d29h829bjuxghm.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_lgchannels-cdp-publica/59ae3092-c65e-44eb-b7cf-39fde16a0c32/3.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
+https://d29h829bjuxghm.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_lgchannels-cdp-publica/c5ef1119-e407-4ad3-807a-a97bc87518f1/4.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
+https://d29h829bjuxghm.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_lgchannels-cdp-publica/c5ef1119-e407-4ad3-807a-a97bc87518f1/5.m3u8
