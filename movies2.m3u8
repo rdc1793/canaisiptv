@@ -1,9 +1,9 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://stream.ads.ottera.tv/cl/250808d2ane940pupvk7g44dj0/640x360_1126400_3_f.m3u8?i=728_2553
+https://stream.ads.ottera.tv/cl/250808d2anjgvoaahtmrearbqg/640x360_1126400_3_f.m3u8?i=475_4866
 
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=854x480
-https://stream.ads.ottera.tv/cl/250808d2ane940pupvk7g44dj0/854x480_1355200_2_f.m3u8?i=728_2553
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=854x480
+https://stream.ads.ottera.tv/cl/250808d2anjgvoaahtmrearbqg/854x480_1355200_2_f.m3u8?i=475_4866
 
-#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=960x540
-https://stream.ads.ottera.tv/cl/250808d2ane940pupvk7g44dj0/960x540_1927200_1_f.m3u8?i=728_2553
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=960x540
+https://stream.ads.ottera.tv/cl/250808d2anjgvoaahtmrearbqg/960x540_1927200_1_f.m3u8?i=475_4866
