@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="CNN ESP" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="cnn.mx" group-title="CNN",mx
+https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8
+#EXTINF:-1 tvg-name="Kanali 7 Ⓢ" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="Kanali7.al" group-title="Albania",Kanali 7 Ⓢ
+https://cdn-1.nxplay.com.br/DISCOVERY_THEATER_NX/tracks-v1a1/mono.m3u8?token=cdntv_62qwd7eSv1Ihnlni&DVR&sd=10&rebase=on
