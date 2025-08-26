@@ -1,5 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="CNN ESP" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="cnn.mx" group-title="CNN",mx
 https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8
-#EXTINF:-1 tvg-name="TELEMUNDO" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="TELEMUNDO.usa" group-title="TELEMUNDO",usa
-https://nbcu-telemundoflorida-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="nick" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="nick.br" group-title="nick",br
+https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6824ce10c5d53e1351ceb8d1livestitch/2977920/playlist.m3u8
+
