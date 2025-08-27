@@ -1,0 +1,3 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6824ce10c5d53e1351ceb8d1livestitch/823680/playlist.m3u8?terminate=false&sid=SAMSUNG-TVPLUS-21f07a3f-8c4b-40ce-b6a7-8ed2a193eac1&deviceDNT=0&deviceLat=0&deviceLon=0&deviceModel=samsung&deviceVersion=unknown&embedPartner=samsung-tvplus&samsung_app_domain=https%3A%2F%2Fwww.samsung.com%2Fus%2Fappstore%2Fapp.do%3FappId%3DG15147002586&samsung_app_name=Samsung%20TV%20Plus&serverSideAds=true&appName=samsungtvplus&deviceId=3c76e696-2f0e-442e-9ac4-4dc641de4882&appVersion=unknown&deviceType=samsung-tvplus&deviceMake=samsung&includeDeviceUA=true&us_privacy=1YNY
