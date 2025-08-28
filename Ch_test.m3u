@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="CNN ESP" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="cnn.mx" group-title="CNN",mx
 https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8
-#EXTINF:-1 tvg-name="nick" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="nick.br" group-title="nick",br
-https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6824ce10c5d53e1351ceb8d1livestitch/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+#EXTINF:-1 tvg-name="tvtest" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="tvtest.br" group-title="tvtest",br
+https://edge02.odtv.az/o7/idman/playlist.m3u8
 
 #EXTINF:-1 tvg-name="test" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="test.br" group-title="test",br
 https://str.yodacdn.net/idman/playlist.m3u8
