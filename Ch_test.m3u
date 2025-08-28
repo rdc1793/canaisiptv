@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="CNN ESP" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="cnn.mx" group-title="CNN",mx
 https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8
-#EXTINF:-1 tvg-name="tvtest" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="tvtest.br" group-title="tvtest",br
-https://edge02.odtv.az/o7/idman/playlist.m3u8
+#EXTINF:-1 tvg-name="tvtest" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="tvtest.az" group-title="tvtest",az
+https://str.yodacdn.net/idman/tracks-v1a1/mono.ts.m3u8?token=cebf4550493e216f4bfabbb8fabe8d3733de1b07-0d90aeb2bf554fd72b1b96e2e0b0a431-1756409887-1756399087
 
 #EXTINF:-1 tvg-name="test" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="test.br" group-title="test",br
 https://str.yodacdn.net/idman/playlist.m3u8
