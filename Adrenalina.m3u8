@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://amg00740-sofa-amg00740c7-tcl-us-7126.playouts.now.amagi.tv/360p-cc/index.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=854x480
+https://amg00740-sofa-amg00740c7-tcl-us-7126.playouts.now.amagi.tv/480p-cc/index.m3u8
