@@ -188,6 +188,8 @@ https://mediaworldwidelimited-travelxp-6-br.tcl.wurl.tv/playlist.m3u8
 http://200.194.238.229:8383/live/urbantravel/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/O1GaLYE.png" group-title="BRASIL",VAMBORA CHANNEL
 https://video07.logicahost.com.br/vamborachannel/vamborachannel/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/WFoObtB.png" group-title="BRASIL",TV EXPLORATION
+https://stmv7.samcast.com.br/lokura/lokura/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/GHGp7O3.png" group-title="BRASIL",REISEN CLUBE TV
 https://pop.uniquetv.com.br/reisenclubetv/video.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/teRJhVJ.png" group-title="BRASIL", TV HISTORIA
@@ -302,6 +304,8 @@ http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/666c9c60a7efd40008f552
 https://jmp2.uk/plu-666c9c60a7efd40008f552f0.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/rVfX5eb.png" group-title="BRASIL",VEJA+
 https://gpa-vja-samsungtvplus-br.otteravision.com/gpa/vja/vja_h265.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/lTNs1GA.png" group-title="BRASIL",TV 247
+https://video03.logicahost.com.br/tv247online/tv247online/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/XAG24uk.png" group-title="BRASIL",TVL NEWS
 https://cdn-luzilandi-10589.ciclano.io:1443/luzilandi-10589/luzilandi-10589/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/lfn2Clb.png" group-title="BRASIL", PORTO ALEGRE 24 HS
@@ -387,7 +391,7 @@ https://cnl-cl-samsung.otteravision.com/cnl/cl_h265/cl_h265.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/Ntv5Iwh.png" group-title="BRASIL", CANAL DO ARTESANATO
 https://ogc-cda-tcl-roku-syndication.otteravision.com/ogc/cda/cda.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/JMYR5Fc.png" group-title="BRASIL", MANUAL DO MUNDO
-https://amg17288-offgrid-amg17288c2-tcl-us-5005.playouts.now.amagi.tv/playlist.m3u8
+https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/cb18a3c3c72d4dd098bd37ee45124cfe/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/JMYR5Fc.png" group-title="BRASIL", MANUAL DO MUNDO
 https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/Offgrid/Manual_do_Mundo_BR/Manual_do_Mundo.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/RbR8KJ5.png" group-title="BRASIL", FASHION TV
@@ -401,11 +405,11 @@ https://revry-brazil.akamaized.net/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/BHi6W84.png" group-title="BRASIL", CANAL PLURAL
 https://stmv2.samcast.com.br/osc6197/osc6197/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/BVaNiqk.png" group-title="BRASIL", WHE PLAY
-https://amg17288-offgrid-amg17288c5-tcl-us-5917.playouts.now.amagi.tv/playlist.m3u8
+https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/ac78411d160e42358ca8cb170222db2b/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/LgHo8BX.png" group-title="BRASIL", SALON LINE
 http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/66a7d0e0cd0d310008448610/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
 #EXTINF:-1 tvg-logo="https://imgur.com/AK8Yr2x.png" group-title="BRASIL", FIT DANCE
-https://amg17288-offgrid-amg17288c4-tcl-us-7667.playouts.now.amagi.tv/playlist.m3u8
+https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/2dd137f1d20441efbc83499b5ef3ad65/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/1ew3DwY.png" group-title="BRASIL",REDE MAIS FAMILIA
 https://video09.logicahost.com.br/redefamilia/redefamilia/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/KlBTxwj.png" group-title="BRASIL",SOL BRASIL 
@@ -588,8 +592,8 @@ https://pop.uniquetv.com.br/supergeek/video.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=4612
 #EXTINF:-1 tvg-logo="https://imgur.com/REsiJz6.png" group-title="BRASIL",UBISOFT TV
 https://ubl-ut-samsung.otteravision.com/ubl/ut/ut.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/NkBNqIl.png" group-title="BRASIL",GOOD GAME TV
-https://dai.google.com/linear/hls/pa/event/mhaiLdPSQ4G8ajOe--yNWg/stream/6d550ae7-1980-4a1a-8ede-4459efeb4089:SCL2/variant/a26beb82aa7564ada098340a3fcb2302/bandwidth/3070540.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/P7dcdMA.png" group-title="BRASIL",NERD SHOW
+https://ffalconnow.api.leiniao.com/media-channel-api/ffalconLive/v1/690c7a306453bd1522fa6018/bunnycontent_main.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/P8jhTJO.png" group-title="BRASIL", LOADING TV
 https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/9YJF0Hx.png" group-title="BRASIL",AW TV
@@ -720,8 +724,6 @@ https://isaocorp.cloudecast.com/vgstv/tracks-v1a1/mono.m3u8
 https://rdcbn.brasilstream.com.br/hls/rdcbn/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/YtagYe6.png" group-title="BRASIL",TV 3 FRONTEIRAS
 https://isaocorp.cloudecast.com/tv3fronteiras/index.fmp4.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/U5Eyc7d.png" group-title="BRASIL",RSC TV
-https://streaming.cloudecast.com/hls/rederecon/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/B6G4gH7.png" group-title="BRASIL", TV PONTA DA SERRA
 https://ikki.hubcloud.tv.br/PontadaSerra/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/XHC0eih.png" group-title="BRASIL",IETV
@@ -732,6 +734,8 @@ https://srv1.zcast.com.br/joaodepaula5617/joaodepaula5617/playlist.m3u8
 https://video01.kshost.com.br:4443/rogerio7271/rogerio7271/playlist.m3u8
 #EXTINF: -1 tvg-logo="https://imgur.com/davbBNf.png" group-title="BRASIL", REVIVA TV
 https://stmv.webtvninjas.com.br/webtvni1/webtvni1/playlist.m3u8
+#EXTINF: -1 tvg-logo="https://imgur.com/MuABn0C.png" group-title="BRASIL", JA VIU TV
+https://stmv5.samcast.com.br/val4355/val4355/playlist.m3u8
 #EXTINF: -1 tvg-logo="https://imgur.com/72JOrDK.png" group-title="BRASIL", TV LITORAL RN
 https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/ijtyTRV.png" group-title="BRASIL",MUNDO TV
@@ -742,6 +746,8 @@ https://video03.logicahost.com.br/redemundotvsat/redemundotvsat/playlist.m3u8
 https://cdn-fast.nxtv.com.br/9978b7063e297d843bf98e85bf4e65ea/rede_mosaico/aovivo_abr/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/FY8kjgr.png" group-title="BRASIL", TV GALLO
 https://5c483b9d1019c.streamlock.net/8202/8202/playlist-480p.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/hoV7Hmg.png" group-title="BRASIL", TV CIDADE BAHIA
+https://cdn.live.br1.jmvstream.com/webtv/ifulrbjz/playlist/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/byJAMHe.png" group-title="BRASIL", MASPER TV
 https://tv02.zas.media:1936/masper/masper/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/PA1uWZT.png" group-title="BRASIL", TV MAX
@@ -756,6 +762,8 @@ https://tv01.zas.media:1936/centraltvweb/centraltvweb/playlist.m3u8
 https://tv03.zas.media:1936/mbc/mbc/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/Z4LnJUr.png" group-title="BRASIL", TV PROFISSAO
 https://tv03.zas.media:1936/tvprofissao/tvprofissao/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/xVIrfLk.png" group-title="BRASIL",REDE METROPOLITANO TV
+https://streaming.cloudecast.com/hls/rederecon/index.m3u8
 #EXTINF: -1 tvg-logo="https://imgur.com/TsGoRFl.png" group-title="BRASIL", TV 100 CAIPIRA
 https://video10.logicahost.com.br/caipira/caipira/playlist.m3u8
 #EXTINF: -1 tvg-logo="https://imgur.com/5TPSD12.png" group-title="BRASIL", TV POMPEIA
@@ -1572,8 +1580,6 @@ https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=worldbil
 https://d29h829bjuxghm.cloudfront.net/hls/BILLIARDTV_SCTE.m3u8?ads.xumo_channelId=99992250
 #EXTINF:-1 tvg-logo="https://imgur.com/tjg2dsp.png" group-title="ESPORTES", KSTAR GOLF
 https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=k-stargolf&channel_id=newid_172
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="ESPORTES", BAND SPORTS
-https://hplay.tv/augetv/12396547488/6733.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/EbCDqVZ.png" group-title="RELIGIOSO",KURIAKOS KIDS
 https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/5sLv99H.png" group-title="RELIGIOSO", GOSPEL CARTOON
@@ -1992,6 +1998,16 @@ http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5fa991b1f09e020007e786
 http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f171f032cd22e0007f17f3d/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
 #EXTINF:-1 tvg-logo="https://imgur.com/hs7RhZ9.png" group-title="FILMES",FILMES AVENTURA
 http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/66c79a4262e5510008ff68a5/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
+
+
+
+
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="ESPORTES", BAND SPORTS
+https://hplay.tv/augetv/12396547488/6733.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="BRASIL", SIC NOTICIAS (2)
+https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 
 
 
