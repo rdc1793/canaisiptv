@@ -12,3 +12,6 @@ https://fl61.moveonjoy.com/NY_New_York_NBC/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ABC-2021-LOGO.svg/960px-ABC-2021-LOGO.svg.png" group-title="OUTROS", ABC (EUA)
 https://fl61.moveonjoy.com/ABC_EAST/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="OUTROS", CBS (EUA)
+https://fl61.moveonjoy.com/FL_Miami_CBS/tracks-v1a1/mono.ts.m3u8
