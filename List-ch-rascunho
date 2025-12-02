@@ -7,6 +7,8 @@ https://hplay.tv/augetv/12396547488/6733.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/635px-NBC_logo_2022_%28vertical%29.svg.png" group-title="OUTROS", NBC
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/635px-NBC_logo_2022_%28vertical%29.svg.png" group-title="OUTROS", NBC (EUA)
 https://fl61.moveonjoy.com/NY_New_York_NBC/tracks-v1a1/mono.ts.m3u8
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ABC-2021-LOGO.svg/960px-ABC-2021-LOGO.svg.png" group-title="OUTROS", ABC (EUA)
+https://fl61.moveonjoy.com/ABC_EAST/tracks-v1a1/mono.ts.m3u8
