@@ -15,3 +15,33 @@ https://fl61.moveonjoy.com/ABC_EAST/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="OUTROS", CBS (EUA)
 https://fl1.moveonjoy.com/IL_Chicago_CBS/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", DOC
+https://rdc1793.github.io/canaisiptv/hallodoc.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", FOOD
+https://rdc1793.github.io/canaisiptv/food.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TRAVEL
+https://rdc1793.github.io/canaisiptv/tur.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", CLASSIC HITS
+https://rdc1793.github.io/canaisiptv/CHits.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIES
+https://rdc1793.github.io/canaisiptv/Canal38.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", SERIES
+https://rdc1793.github.io/canaisiptv/series.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL PÚBLICO
+https://rdc1793.github.io/canaisiptv/EBC.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", SPORTS
+https://rdc1793.github.io/canaisiptv/sports.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
+https://rdc1793.github.io/canaisiptv/news.m3u8
+
+
+
