@@ -3,7 +3,7 @@
 https://amg00803-amg00803c3-rakuten-us-5347.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-rakutenus/playlist.m3u8
 
 #EXTINF:-1 tvg-name="tvtest" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="tvtest.ch" group-title="tvtest",ch
-https://45.235.0.78/Nickelodeon/playlist.m3u8
+https://rdc1793.github.io/canaisiptv/sbt.m3u8
 
 #EXTINF:-1 tvg-name="test" tvg-logo="https://i.imgur.com/rL2v9pM.png" tvg-id="test.br" group-title="test",br
 https://raw.githubusercontent.com/sandeu/Minha-lista/main/lista1.m3u
