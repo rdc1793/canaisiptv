@@ -2012,21 +2012,11 @@ http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f171f032cd22e0007f17f
 http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/66c79a4262e5510008ff68a5/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
 
 
-
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="OUTROS", BAND SPORTS
 https://hplay.tv/augetv/12396547488/6733.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/635px-NBC_logo_2022_%28vertical%29.svg.png" group-title="OUTROS", NBC (EUA)
-https://fl61.moveonjoy.com/NY_New_York_NBC/tracks-v1a1/mono.ts.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ABC-2021-LOGO.svg/960px-ABC-2021-LOGO.svg.png" group-title="OUTROS", ABC (EUA)
-https://fl61.moveonjoy.com/ABC_EAST/tracks-v1a1/mono.ts.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="OUTROS", CBS (EUA)
-https://fl1.moveonjoy.com/IL_Chicago_CBS/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", DOC
 https://rdc1793.github.io/canaisiptv/hallodoc.m3u8
@@ -2055,6 +2045,6 @@ https://rdc1793.github.io/canaisiptv/sports.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
 https://rdc1793.github.io/canaisiptv/news.m3u8
 
-
-
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MAIS CANAIS
+https://abre.ai/manotvm3u
 
