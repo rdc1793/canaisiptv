@@ -1,9 +1,54 @@
+#EXTM3U url-tvg="https://iptv-org.github.io/epg/guides/pt/mi.tv.xml,https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/all.xml,https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/all.xml"  size="Medium"
+
+
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", LIKE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=16500
+
+#EXTINF:-1 tvg-logo="https://imgur.com/B4EX5I5.png" group-title="OUTROS", TV PORTUGUESA
+https://video09.logicahost.com.br/tvportuguesa/tvportuguesa/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS",RUNTIME
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jWJkbrn.png" group-title="OUTROS",RUNTIME ACAO
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2552
+
+#EXTINF:-1 tvg-logo="https://imgur.com/ulT75O3.png" group-title="OUTROS",RUNTIME COMEDIA
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2553
+
+#EXTINF:-1 tvg-logo="https://imgur.com/KQt9WGA.png" group-title="OUTROS",RUNTIME CRIME
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4864
+
+#EXTINF:-1 tvg-logo="https://imgur.com/bzX7MO8.png" group-title="OUTROS",RUNTIME CINE ESPANTO
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4865
+
+#EXTINF:-1 tvg-logo="https://imgur.com/U6ElKK3.png" group-title="OUTROS",RUNTIME ROMANCE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4866
+
+#EXTINF:-1 tvg-logo="https://imgur.com/pFtnILf.png" group-title="OUTROS",RUNTIME FAMILIA
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5589
+
+#EXTINF:-1 tvg-logo="https://imgur.com/igbcugD.png" group-title="OUTROS", TOON GOOGLE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5442
+
+#EXTINF:-1 tvg-logo="https://imgur.com/8WGwg4c.png" group-title="OUTROS", MOTORVISION
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=758
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Uzu2C5M.png" group-title="OUTROS",RECORD NEWS
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="OUTROS", BAND SPORTS
 https://hplay.tv/augetv/12396547488/6733.m3u8
 
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
+https://hplay.tv/augetv/12396547488/1300.m3u8
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", SIC TV PORTUGAL
+https://rdc1793.github.io/canaisiptv/sic.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", DOC
 https://rdc1793.github.io/canaisiptv/hallodoc.m3u8
@@ -12,7 +57,10 @@ https://rdc1793.github.io/canaisiptv/hallodoc.m3u8
 https://rdc1793.github.io/canaisiptv/food.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TRAVEL
-https://rdc1793.github.io/canaisiptv/tur.m3u8
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=16313
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TRAVELXP
+https://rdc1793.github.io/canaisiptv/Turismo.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CLASSIC HITS
 https://rdc1793.github.io/canaisiptv/CHits.m3u8
@@ -20,8 +68,11 @@ https://rdc1793.github.io/canaisiptv/CHits.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIES
 https://rdc1793.github.io/canaisiptv/Canal38.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", SERIES
-https://rdc1793.github.io/canaisiptv/series.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/CsC9aG5.png" group-title="OUTROS",SONY ONE EMOCOES
+https://spt-sonyoneemocoes-1-br.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/fRJ3FaV.png" group-title="OUTROS", SONY ONE CINEMA
+https://spt-sonyoneclassicas-1-br.samsung.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL PÚBLICO
 https://rdc1793.github.io/canaisiptv/EBC.m3u8
@@ -32,6 +83,25 @@ https://rdc1793.github.io/canaisiptv/sports.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
 https://rdc1793.github.io/canaisiptv/news.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", MAIS CANAIS
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", RETRO
+https://tv01.zas.media:1936/centraltvweb/centraltvweb/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIE SPHERE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=6178
+
+#EXTINF:-1 tvg-logo="https://imgur.com/H8rooCk.png" group-title="OUTROS", ASSIM E PORTUGAL
+https://video04.logicahost.com.br/assimeportugal/assimeportugal/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MAIS CANAIS (LISTA 1)
+https://raw.githubusercontent.com/sandeu/Minha-lista/main/lista1.m3u
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MAIS CANAIS (LISTA 2)
+https://www.apsattv.com/soultv.m3u
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MAIS CANAIS (LISTA 3)
+https://www.apsattv.com/redeitv.m3u
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MAIS CANAIS (LISTA 4)
 https://raw.githubusercontent.com/ManoLimah/Manoteste/refs/heads/main/ManoTV.m3u
+
 
