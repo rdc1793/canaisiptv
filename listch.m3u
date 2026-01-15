@@ -77,8 +77,8 @@ https://spt-sonyoneclassicas-1-br.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL PÚBLICO
 https://rdc1793.github.io/canaisiptv/EBC.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", SPORTS
-https://rdc1793.github.io/canaisiptv/sports.m3u8
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", NSPORTS
+https://video01.soultv.com.br/nsports/nsports/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
 https://rdc1793.github.io/canaisiptv/news.m3u8
