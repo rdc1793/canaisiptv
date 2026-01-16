@@ -5,8 +5,8 @@
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", LIKE
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=16500
 
-#EXTINF:-1 tvg-logo="https://imgur.com/B4EX5I5.png" group-title="OUTROS", TV PORTUGUESA
-https://video09.logicahost.com.br/tvportuguesa/tvportuguesa/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/B4EX5I5.png" group-title="OUTROS", AUGE TV
+https://video01.logicahost.com.br/canalaugetv/canalaugetv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS",RUNTIME
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153
@@ -50,8 +50,8 @@ https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", SIC TV PORTUGAL
 https://rdc1793.github.io/canaisiptv/sic.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", DOC
-https://video01.logicahost.com.br/canalcurta/canalcurta/chunklist.m3u8
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", CURTA
+https://ffalconnow.api.leiniao.com/media-channel-api/ffalconLive/v1/67e6138226d64d282fb509af/bunnycontent_main.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", FOOD
 https://rdc1793.github.io/canaisiptv/food.m3u8
