@@ -1,0 +1,134 @@
+#EXTM3U url-tvg="https://iptv-org.github.io/epg/guides/pt/mi.tv.xml,https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/all.xml,https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/all.xml"  size="Medium"
+
+
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", LIKE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=16500
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", AUGE TV
+https://video01.logicahost.com.br/canalaugetv/canalaugetv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS",
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153
+
+#EXTINF:-1 tvg-logo="https://imgur.com/jWJkbrn.png" group-title="OUTROS",RUNTIME ACAO
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2552
+
+#EXTINF:-1 tvg-logo="https://imgur.com/ulT75O3.png" group-title="OUTROS",RUNTIME COMEDIA
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=2553
+
+#EXTINF:-1 tvg-logo="https://imgur.com/KQt9WGA.png" group-title="OUTROS",RUNTIME CRIME
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4864
+
+#EXTINF:-1 tvg-logo="https://imgur.com/bzX7MO8.png" group-title="OUTROS",RUNTIME CINE ESPANTO
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4865
+
+#EXTINF:-1 tvg-logo="https://imgur.com/U6ElKK3.png" group-title="OUTROS",RUNTIME ROMANCE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4866
+
+#EXTINF:-1 tvg-logo="https://imgur.com/pFtnILf.png" group-title="OUTROS",RUNTIME FAMILIA
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5589
+
+#EXTINF:-1 tvg-logo="https://imgur.com/igbcugD.png" group-title="OUTROS", TOON GOOGLE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5442
+
+#EXTINF:-1 tvg-logo="https://imgur.com/8WGwg4c.png" group-title="OUTROS", MOTORVISION
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=758
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Uzu2C5M.png" group-title="OUTROS",RECORD NEWS
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="OUTROS", BAND SPORTS
+https://hplay.tv/augetv/12396547488/6733.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
+https://hplay.tv/augetv/12396547488/1300.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
+https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", SIC TV PORTUGAL
+https://rdc1793.github.io/canaisiptv/sic.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", D+ TV
+https://stmv1.samcast.com.br/demaistv6503/demaistv6503/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", FOOD
+https://rdc1793.github.io/canaisiptv/food.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TRAVEL
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=16313
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TRAVELXP
+https://rdc1793.github.io/canaisiptv/Turismo.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", CLASSIC HITS
+https://rdc1793.github.io/canaisiptv/CHits.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIES
+https://rdc1793.github.io/canaisiptv/Canal38.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/fRJ3FaV.png" group-title="OUTROS", SONY ONE CINEMA
+https://rdc1793.github.io/canaisiptv/sonycinema.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL PÚBLICO
+https://rdc1793.github.io/canaisiptv/EBC.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", NSPORTS
+https://video01.soultv.com.br/nsports/nsports/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
+https://rdc1793.github.io/canaisiptv/news.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", RETRO
+https://tv01.zas.media:1936/centraltvweb/centraltvweb/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIE SPHERE
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=6178
+
+#EXTINF:-1 tvg-logo="https://imgur.com/3RBM5sw.png" group-title="AGRO",CANAL AGROPLUS
+https://video01.soultv.com.br/agroplus/agroplus/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/wL8xlPt.png" group-title="ESPORTES",AUGE ESPORTES
+https://video04.logicahost.com.br/augeesportes/augeesportes/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", SPORTS
+https://rdc1793.github.io/canaisiptv/sports.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/g9AtH3s.png" group-title="Canais | VARIEDADES",Curta!
+https://video01.logicahost.com.br/canalcurta/canalcurta/playlist.m3u8 
+
+#EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="FILMES",SO PLAY MOVIES
+https://origin-nxtv.b-cdn.net/SOPLAY_MOVIES/tracks-v1a1/mono.m3u8 
+
+
+#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
+https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
+https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e924e59803c486e434e96d4/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
+https://cdn-fast.nxtv.com.br/scheduler/scheduleMaster/387/variant/22099961.m3u8?bpkio_serviceid=9978b7063e297d84ec5d68e4110d11fc
+
+#EXTINF:-1 tvg-logo="https://imgur.com/i9ajVp7.png" group-title="FILMES", CHANNEL 1
+https://stmv2.painelvideocast.com.br/movies1/movies1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/mvuZGvt.png" group-title="FILMES",CLASSIQUE TV
+https://stmv2.painelvideocast.com.br/classique/classique/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/PjKwATV.png" group-title="FILMES", 1980 CHANNEL
+https://stmv1.srvif.com/channel80s/channel80s/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/nAxNfq1.png" group-title="FILMES", MULTICANAIS
+https://stmv2.painelvideocast.com.br/multicanais/multicanais/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/eMqSVYN.png" group-title="FILMES",TV CIDADE
+https://stmv2.samcast.com.br/tvcidadebrasil/tvcidadebrasil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/JIobzE9.png" group-title="FILMES",TV BRADOCKY
+https://video01.soultv.com.br/bradoky/bradoky/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/fukaKG4.png" group-title="FILMES",TV MINUTO NORDESTE
+https://stmv7.samcast.com.br/genival6279/genival6279/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/IG0EEB6.png" group-title="FILMES", CINEMONDE
+https://video01.soultv.com.br/cinemonde/cinemonde/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/52LSunV.png" group-title="FILMES",SOUL CINE CLUBE 
+https://video01.soultv.com.br/soulcine/soulcine/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/RLH1Qff.png" group-title="BRASIL", AUGE CDC
+https://video05.logicahost.com.br/augecdc/augecdc/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/qUiPZiw.png" group-title="BRASIL", CARAVANA PLAY
+https://stmv2.voxtvhd.com.br/keynni6990/keynni6990/playlist.m3u8
