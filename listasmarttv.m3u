@@ -8,7 +8,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=16500
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", AUGE TV
 https://video01.logicahost.com.br/canalaugetv/canalaugetv/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS",
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", RUNTIME
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153
 
 #EXTINF:-1 tvg-logo="https://imgur.com/jWJkbrn.png" group-title="OUTROS",RUNTIME ACAO
@@ -95,8 +95,18 @@ https://video04.logicahost.com.br/augeesportes/augeesportes/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", SPORTS
 https://rdc1793.github.io/canaisiptv/sports.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/g9AtH3s.png" group-title="Canais | VARIEDADES",Curta!
-https://video01.logicahost.com.br/canalcurta/canalcurta/playlist.m3u8 
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", ADRENALINA
+https://rdc1793.github.io/canaisiptv/Adrenalina.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", ACESSO BR
+https://cdn.live.br1.jmvstream.com/webtv/tvacessochannel/playlist/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TV ABERTA
+https://viamotionhsi.netplus.ch/live/eds/rederecordinternacional/browser-HLS8/rederecordinternacional-avc1_1300000=4-mp4a_130400_por=1.m3u8
+
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MUNDO
+https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd-avc1_1300000=10009-mp4a_130400_eng=20002.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="FILMES",SO PLAY MOVIES
 https://origin-nxtv.b-cdn.net/SOPLAY_MOVIES/tracks-v1a1/mono.m3u8 
@@ -104,10 +114,9 @@ https://origin-nxtv.b-cdn.net/SOPLAY_MOVIES/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
 https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
 https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e924e59803c486e434e96d4/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
-https://cdn-fast.nxtv.com.br/scheduler/scheduleMaster/387/variant/22099961.m3u8?bpkio_serviceid=9978b7063e297d84ec5d68e4110d11fc
 
 #EXTINF:-1 tvg-logo="https://imgur.com/i9ajVp7.png" group-title="FILMES", CHANNEL 1
 https://stmv2.painelvideocast.com.br/movies1/movies1/playlist.m3u8
