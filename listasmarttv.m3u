@@ -98,6 +98,15 @@ https://rdc1793.github.io/canaisiptv/sports.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", ADRENALINA
 https://rdc1793.github.io/canaisiptv/Adrenalina.m3u8
 
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", ARQUIVOS FBI
+https://ffalconnow.api.leiniao.com/media-channel-api/ffalconLive/v1/68773c30e9e90f4e11b35d9e/bunnycontent_main.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", FRRETV DRAMA
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=13317
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", FREETV CRIME
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=13321
+
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", ACESSO BR
 https://cdn.live.br1.jmvstream.com/webtv/tvacessochannel/playlist/chunklist.m3u8
 
@@ -108,8 +117,8 @@ https://viamotionhsi.netplus.ch/live/eds/rederecordinternacional/browser-HLS8/re
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", MUNDO
 https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd-avc1_1300000=10009-mp4a_130400_eng=20002.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="FILMES",SO PLAY MOVIES
-https://origin-nxtv.b-cdn.net/SOPLAY_MOVIES/tracks-v1a1/mono.m3u8 
+#EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="OUTROS", NEW BRASIL
+https://ssai2-ads.api.leiniao.com/global-adinsertion-api/hls/live/midRollAndPipAd/49587eb5acfb435cac34dcfc820bf564/playlist.m3u8 
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
@@ -137,7 +146,8 @@ https://video01.soultv.com.br/cinemonde/cinemonde/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/52LSunV.png" group-title="FILMES",SOUL CINE CLUBE 
 https://video01.soultv.com.br/soulcine/soulcine/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/RLH1Qff.png" group-title="BRASIL", AUGE CDC
-https://video05.logicahost.com.br/augecdc/augecdc/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/RLH1Qff.png" group-title="OUTROS", ACELERADOS
+https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/15e0929cac2745c59c7a6bc1455a8ab2/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/qUiPZiw.png" group-title="BRASIL", CARAVANA PLAY
 https://stmv2.voxtvhd.com.br/keynni6990/keynni6990/playlist.m3u8
