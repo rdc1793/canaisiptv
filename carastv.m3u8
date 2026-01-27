@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://dfr80qz435crc.cloudfront.net/IJKL/Amagi/Caras/CarasTV_BR/360p-hevc-vtt/index.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=960x540
+https://dfr80qz435crc.cloudfront.net/IJKL/Amagi/Caras/CarasTV_BR/540p-hevc-vtt/index.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
+https://dfr80qz435crc.cloudfront.net/IJKL/Amagi/Caras/CarasTV_BR/720p-hevc-vtt/index.m3u8
