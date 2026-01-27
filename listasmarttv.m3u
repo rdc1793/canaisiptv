@@ -145,8 +145,8 @@ https://video01.soultv.com.br/cinemonde/cinemonde/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/52LSunV.png" group-title="FILMES",SOUL CINE CLUBE 
 https://video01.soultv.com.br/soulcine/soulcine/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/RLH1Qff.png" group-title="OUTROS", ACELERADOS
-https://cc-afscwj856ih88.akamaized.net/IJKL/Amagi/Offgrid/Acelerados_BR/576p-vtt/index.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/RLH1Qff.png" group-title="OUTROS", WOHOO SURF
+https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/1edb59fc36da4004ba4452a3e00993b2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/qUiPZiw.png" group-title="BRASIL", CARAVANA PLAY
 https://stmv2.voxtvhd.com.br/keynni6990/keynni6990/playlist.m3u8
