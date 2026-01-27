@@ -158,5 +158,6 @@ https://video04.logicahost.com.br/isonata/isonata/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", REVIVA
 https://stmv.webtvninjas.com.br/webtvni1/webtvni1/chunklist.m3u8
 
-
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", CURTA
+https://video01.logicahost.com.br/canalcurta/canalcurta/playlist.m3u8
 
