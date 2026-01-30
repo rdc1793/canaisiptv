@@ -1,0 +1,12 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://cc-afscwj856ih88.akamaized.net/IJKL/Amagi/Offgrid/Acelerados_BR/360p-vtt/index.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=960x540
+https://cc-afscwj856ih88.akamaized.net/IJKL/Amagi/Offgrid/Acelerados_BR/576p-vtt/index.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
+https://cc-afscwj856ih88.akamaized.net/IJKL/Amagi/Offgrid/Acelerados_BR/720p-vtt/index.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
+https://cc-afscwj856ih88.akamaized.net/IJKL/Amagi/Offgrid/Acelerados_BR/720lp-vtt/index.m3u8
