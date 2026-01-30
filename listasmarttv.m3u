@@ -80,7 +80,7 @@ https://video01.soultv.com.br/nsports/nsports/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
 https://rdc1793.github.io/canaisiptv/news.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", RETRO
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", MBC BRASIL TV
 https://tv01.zas.media:1936/centraltvweb/centraltvweb/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIE SPHERE
@@ -92,7 +92,7 @@ https://video01.soultv.com.br/agroplus/agroplus/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/wL8xlPt.png" group-title="ESPORTES",AUGE ESPORTES
 https://video04.logicahost.com.br/augeesportes/augeesportes/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", SPORTS
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", GE TV
 https://rdc1793.github.io/canaisiptv/sports.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", ADRENALINA
@@ -163,3 +163,6 @@ https://video01.logicahost.com.br/canalcurta/canalcurta/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", ACELERADOS
 https://rdc1793.github.io/canaisiptv/acelerados.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", NEW BRASIL
+https://rdc1793.github.io/canaisiptv/newbr.m3u8
