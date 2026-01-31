@@ -166,3 +166,6 @@ https://ffalconnow-us.api.leiniao.com/media-channel-api/ffalcon/RestreamLive/v1/
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEW BRASIL
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", PLAY TV
+https://cdn-tiva-maystreaming-cloudecast-com.smartbit.co/playtv/index.m3u8
