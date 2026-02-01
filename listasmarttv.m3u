@@ -120,7 +120,7 @@ https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd-avc1_130
 #EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="OUTROS", TELA BRASIL
 https://stmv.webtvninjas.com.br/mailson6054/mailson6054/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", MANUAL DO MUNDO
+#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="OUTROS", MANUAL DO MUNDO
 https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/cb18a3c3c72d4dd098bd37ee45124cfe/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
@@ -128,8 +128,10 @@ https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e92
 
 #EXTINF:-1 tvg-logo="https://imgur.com/i9ajVp7.png" group-title="FILMES", CHANNEL 1
 https://stmv2.painelvideocast.com.br/movies1/movies1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/mvuZGvt.png" group-title="FILMES",CLASSIQUE TV
-https://stmv2.painelvideocast.com.br/classique/classique/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/mvuZGvt.png" group-title="OUTROS",TV DA PESCA
+https://isaocorp.cloudecast.com/tvdapesca/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/PjKwATV.png" group-title="FILMES", 1980 CHANNEL
 https://stmv1.srvif.com/channel80s/channel80s/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/nAxNfq1.png" group-title="FILMES", MULTICANAIS
