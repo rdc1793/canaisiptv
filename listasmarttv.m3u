@@ -120,8 +120,8 @@ https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd-avc1_130
 #EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="OUTROS", TELA BRASIL
 https://stmv.webtvninjas.com.br/mailson6054/mailson6054/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="OUTROS", AUGE GOSPEL
-https://video01.logicahost.com.br/augegospel/augegospel/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="OUTROS", CINEBRASIL TV
+https://hplay.tv/augetv/12396547488/6745.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
 https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e924e59803c486e434e96d4/playlist.m3u8
