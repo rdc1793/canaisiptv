@@ -38,11 +38,11 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=758
 #EXTINF:-1 tvg-logo="https://imgur.com/Uzu2C5M.png" group-title="OUTROS",RECORD NEWS
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="OUTROS", BAND SPORTS
-https://hplay.tv/augetv/12396547488/6733.m3u8
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", RED BULL
+https://ssai2-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/7f1acf7c00bf4d13a0170e0e8c4bcf3b/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
-https://hplay.tv/augetv/12396547488/1300.m3u8
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TIMES BRASIL/CNBC
+https://video01.soultv.com.br/timesbrasil/timesbrasil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", ARTE 1
 https://hplay.tv/augetv/12396547488/6724.m3u8
