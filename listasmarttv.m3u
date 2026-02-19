@@ -173,10 +173,13 @@ https://ffalconnow-us.api.leiniao.com/media-channel-api/ffalcon/RestreamLive/v1/
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", GEEKDOT
-https://stream.ichibantv.com:3764/hybrid/play.m3u8
+https://stream.ichibantv.com/hybrid/play.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", GP TV
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=16499
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CAZE TV
 https://rdc1793.github.io/canaisiptv/cazetv.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", LOADING TV
+https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
