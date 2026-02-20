@@ -44,8 +44,8 @@ https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TIMES BRASIL/CNBC
 https://video01.soultv.com.br/timesbrasil/timesbrasil/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", ARTE 1
-https://hplay.tv/augetv/12396547488/6724.m3u8
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
+https://streaming.sattvgo.com.br/BAND_NEWS_HD/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
@@ -124,7 +124,7 @@ https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd-avc1_130
 https://stmv.webtvninjas.com.br/mailson6054/mailson6054/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="OUTROS", CINEBRASIL TV
-https://hplay.tv/augetv/12396547488/6745.m3u8
+https://streaming.sattvgo.com.br/CINEBRASILTV_HD/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
 https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e924e59803c486e434e96d4/playlist.m3u8
@@ -172,8 +172,8 @@ https://ffalconnow-us.api.leiniao.com/media-channel-api/ffalcon/RestreamLive/v1/
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEW BRASIL
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", RCTV
-https://tv03.zas.media:1936/mbc/mbc/playlist.m3u8
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND SPORTS
+https://streaming.sattvgo.com.br/BAND_SPORTS_HD/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", GP TV
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=16499
@@ -186,3 +186,7 @@ https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT
 https://streaming.sattvgo.com.br/TNT_HD/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", DISCOVERY
+https://streaming.sattvgo.com.br/DISCOVERY_HD/playlist.m3u8
+
