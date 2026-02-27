@@ -45,7 +45,7 @@ https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
 https://video01.soultv.com.br/timesbrasil/timesbrasil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
-https://hplay.tv/augetv/12396547488/1300.m3u8
+https://hplay.tv:443/augetv/12396547488/1300.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
@@ -171,7 +171,7 @@ https://ffalconnow-us.api.leiniao.com/media-channel-api/ffalcon/RestreamLive/v1/
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND SPORTS
-https://hplay.tv/augetv/12396547488/6733.m3u8
+https://hplay.tv:443/augetv/12396547488/6733.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", GP TV
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=16499
@@ -184,7 +184,4 @@ https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT
 https://streaming.sattvgo.com.br/TNT_HD/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", GEEKDOT
-https://stream.ichibantv.com:3764/hybrid/play.m3u8
 
