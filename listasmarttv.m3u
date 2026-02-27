@@ -137,16 +137,22 @@ https://isaocorp.cloudecast.com/tvdapesca/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/PjKwATV.png" group-title="FILMES", 1980 CHANNEL
 https://stmv1.srvif.com/channel80s/channel80s/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/nAxNfq1.png" group-title="FILMES", MULTICANAIS
 https://stmv2.painelvideocast.com.br/multicanais/multicanais/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/eMqSVYN.png" group-title="FILMES",TV CIDADE
-https://stmv2.samcast.com.br/tvcidadebrasil/tvcidadebrasil/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/eMqSVYN.png" group-title="FILMES", CINEMAX
+https://streaming.sattvgo.com.br/CINEMAX/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/JIobzE9.png" group-title="FILMES",TV BRADOCKY
 https://video01.soultv.com.br/bradoky/bradoky/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://imgur.com/fukaKG4.png" group-title="FILMES",TV MINUTO NORDESTE
-https://stmv7.samcast.com.br/genival6279/genival6279/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgur.com/fukaKG4.png" group-title="FILMES", HBO 2
+https://streaming.sattvgo.com.br/HBO2/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/IG0EEB6.png" group-title="FILMES", CINEMONDE
 https://video01.soultv.com.br/cinemonde/cinemonde/chunklist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgur.com/52LSunV.png" group-title="FILMES",SOUL CINE CLUBE 
 https://video01.soultv.com.br/soulcine/soulcine/playlist.m3u8
 
