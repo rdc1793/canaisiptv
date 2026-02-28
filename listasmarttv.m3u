@@ -42,7 +42,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TIMES BRASIL/CNBC
-https://video01.soultv.com.br/timesbrasil/timesbrasil/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
 https://hplay.tv:443/augetv/12396547488/1300.m3u8
@@ -183,5 +183,4 @@ https://rdc1793.github.io/canaisiptv/cazetv.m3u8
 https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT
-https://streaming.sattvgo.com.br/TNT_HD/playlist.m3u8
 
