@@ -45,7 +45,7 @@ https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
 
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
-https://hplay.tv:443/augetv/12396547488/1300.m3u8
+https://rdc1793.github.io/canaisiptv/bandnewsfm.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
@@ -78,7 +78,7 @@ https://rdc1793.github.io/canaisiptv/sonycinema.m3u8
 https://rdc1793.github.io/canaisiptv/EBC.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL 29
-https://stmv1.srvif.com/canal29/canal29/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEWS
 https://rdc1793.github.io/canaisiptv/news.m3u8
@@ -114,10 +114,10 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=13321
 
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", RECORD
-https://viamotionhsi.netplus.ch/live/eds/rederecordinternacional/browser-HLS8/rederecordinternacional-avc1_1300000=4-mp4a_130400_por=1.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", MUNDO
-https://viamotionhsi.netplus.ch/live/eds/rsila2hd/browser-HLS8/rsila2hd-avc1_1300000=10009-mp4a_130400_eng=20002.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="OUTROS", TELA BRASIL
 https://stmv.webtvninjas.com.br/mailson6054/mailson6054/playlist.m3u8
