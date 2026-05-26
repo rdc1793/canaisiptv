@@ -1,10 +1,10 @@
 #EXTM3U
 #EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
-https://amg29547-amg29547c2-amgplt0026.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg29547-amg29547c2-amgplt0026/1f03ea45-5878-11f1-b20a-321ed3586f3a/143/640x360_1184040/index.m3u8
+https://amg29547-amg29547c2-amgplt0026.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg29547-amg29547c2-amgplt0026/1f03ea45-5878-11f1-b20a-321ed3586f3a/143/640x360_1184040/playlist.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=960x540
-https://amg29547-amg29547c2-amgplt0026.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg29547-amg29547c2-amgplt0026/1f03ea45-5878-11f1-b20a-321ed3586f3a/143/960x540_2081040/index.m3u8
+https://amg29547-amg29547c2-amgplt0026.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg29547-amg29547c2-amgplt0026/1f03ea45-5878-11f1-b20a-321ed3586f3a/143/960x540_2081040/playlist.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1280x720
-https://amg29547-amg29547c2-amgplt0026.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg29547-amg29547c2-amgplt0026/1f03ea45-5878-11f1-b20a-321ed3586f3a/143/1280x720_3420560/index.m3u8
+https://amg29547-amg29547c2-amgplt0026.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg29547-amg29547c2-amgplt0026/1f03ea45-5878-11f1-b20a-321ed3586f3a/143/1280x720_3420560/playlist.m3u8
 
