@@ -102,7 +102,7 @@ https://rdc1793.github.io/canaisiptv/sports.m3u8
 https://rdc1793.github.io/canaisiptv/Adrenalina.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", ARQUIVOS FBI
-https://ffalconnow.api.leiniao.com/media-channel-api/ffalconLive/v1/68773c30e9e90f4e11b35d9e/bunnycontent_main.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", FREETV DRAMA
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=13317
@@ -162,16 +162,16 @@ https://video04.logicahost.com.br/isonata/isonata/playlist.m3u8
 https://stmv.webtvninjas.com.br/webtvni1/webtvni1/chunklist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CURTA
-https://video01.logicahost.com.br/canalcurta/canalcurta/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CBN
-https://ffalconnow-us.api.leiniao.com/media-channel-api/ffalcon/RestreamLive/v1/685e4ad9298d37c2bc151f8c/main.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEW BRASIL
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND SPORTS
-https://hplay.tv:443/augetv/12396547488/6733.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", GP TV
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=16499
