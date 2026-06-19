@@ -39,7 +39,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=758
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", PET LOVERS TV
-https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TIMES BRASIL/CNBC
 
@@ -128,8 +128,8 @@ https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e92
 #EXTINF:-1 tvg-logo="https://imgur.com/i9ajVp7.png" group-title="FILMES", CHANNEL 1
 https://stmv2.painelvideocast.com.br/movies1/movies1/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/mvuZGvt.png" group-title="OUTROS",TV DA PESCA
-https://isaocorp.cloudecast.com/tvdapesca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/mvuZGvt.png" group-title="OUTROS",TDM
+https://globallive.tdm.com.mo/ch2/ch2.live/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/PjKwATV.png" group-title="FILMES", 1980 CHANNEL
 
