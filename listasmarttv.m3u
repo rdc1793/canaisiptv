@@ -50,11 +50,11 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", SIC TV PORTUGAL
-https://rdc1793.github.io/canaisiptv/sic.m3u8
+#EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", TELEMUNDO
+https://i1.ut770.freelocaltv.org/hls/ktmw-20_hls/ktmw-20_master.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", D+ TV
-https://stmv1.samcast.com.br/demaistv6503/demaistv6503/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", FOOD
 https://rdc1793.github.io/canaisiptv/food.m3u8
@@ -123,10 +123,10 @@ https://rdc1793.github.io/canaisiptv/Adrenalina.m3u8
 https://stmv.webtvninjas.com.br/mailson6054/mailson6054/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
-https://ssai-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/b1226ff17e924e59803c486e434e96d4/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/i9ajVp7.png" group-title="FILMES", CHANNEL 1
-https://stmv2.painelvideocast.com.br/movies1/movies1/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/mvuZGvt.png" group-title="OUTROS",TDM
 https://globallive.tdm.com.mo/ch2/ch2.live/playlist.m3u8
