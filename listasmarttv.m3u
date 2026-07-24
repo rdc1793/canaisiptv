@@ -51,7 +51,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", TELEMUNDO
-https://i1.ut770.freelocaltv.org/hls/ktmw-20_hls/ktmw-20_master.m3u8
+https://rdc1793.github.io/canaisiptv/telemundo.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", D+ TV
 
