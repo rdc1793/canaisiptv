@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=640x360
+https://i1.ut770.freelocaltv.org/hls/ktmw-20_hls/ktmw-20_profile4.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,RESOLUTION=960x540
+https://i1.ut770.freelocaltv.org/hls/ktmw-20_hls/ktmw-20_profile3.m3u8
