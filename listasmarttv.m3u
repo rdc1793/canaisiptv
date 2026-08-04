@@ -50,7 +50,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/oHoy5Qk.png" group-title="OUTROS", TELEMUNDO
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TELEMUNDO
 https://rdc1793.github.io/canaisiptv/telemundo.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", D+ TV
@@ -135,7 +135,7 @@ https://globallive.tdm.com.mo/ch2/ch2.live/playlist.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/nAxNfq1.png" group-title="FILMES", MULTICANAIS
-https://stmv2.painelvideocast.com.br/multicanais/multicanais/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/JIobzE9.png" group-title="OUTROS", SOU TV
 
@@ -180,7 +180,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=16499
 https://rdc1793.github.io/canaisiptv/cazetv.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", LOADING TV
-https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT
-
+https://streamer.sattvacabo.com.br/TNT_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
