@@ -164,8 +164,8 @@ https://stmv.webtvninjas.com.br/webtvni1/webtvni1/chunklist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CURTA
 
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", CBN
-
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", HISTORY
+https://streamer.sattvacabo.com.br/HISTORY_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEW BRASIL
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
