@@ -39,10 +39,10 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=758
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/BandSports_logo_2018.png" group-title="OUTROS", BAND SPORTS
-https://hplay.tv/augetv/12396547488/6733.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND NEWS
-https://hplay.tv/augetv/12396547488/1300.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SIC_Not%C3%ADcias_%282023%29.svg/512px-SIC_Not%C3%ADcias_%282023%29.svg.png" group-title="OUTROS", SIC NOTICIAS 
 https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
@@ -51,7 +51,7 @@ https://rdc1793.github.io/canaisiptv/sicnoticias.m3u8
 https://rdc1793.github.io/canaisiptv/sic.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", D+ TV
-https://stmv1.samcast.com.br/demaistv6503/demaistv6503/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", FOOD
 https://rdc1793.github.io/canaisiptv/food.m3u8
@@ -84,7 +84,7 @@ https://rdc1793.github.io/canaisiptv/EBC.m3u8
 https://rdc1793.github.io/canaisiptv/news.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", RETRO
-https://tv01.zas.media:1936/centraltvweb/centraltvweb/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", MOVIE SPHERE
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=6178
