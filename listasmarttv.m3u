@@ -75,6 +75,9 @@ https://rdc1793.github.io/canaisiptv/Canal38.m3u8
 https://rdc1793.github.io/canaisiptv/sonycinema.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL PÚBLICO
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#EXTVLCOPT:network-caching=3000
 https://rdc1793.github.io/canaisiptv/EBC.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CANAL 29
@@ -120,7 +123,7 @@ https://rdc1793.github.io/canaisiptv/Adrenalina.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/Qz04U52.png" group-title="OUTROS", TELA BRASIL
-https://stmv.webtvninjas.com.br/mailson6054/mailson6054/playlist.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://imgur.com/HBNYdop.png" group-title="FILMES", CINDIE LITE
 
@@ -159,7 +162,7 @@ https://stmv2.voxtvhd.com.br/keynni6990/keynni6990/playlist.m3u8
 https://video04.logicahost.com.br/isonata/isonata/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", REVIVA
-https://stmv.webtvninjas.com.br/webtvni1/webtvni1/chunklist.m3u8
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CURTA
 
