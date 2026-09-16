@@ -180,12 +180,20 @@ https://video04.logicahost.com.br/isonata/isonata/playlist.m3u8
 https://media.cdntvms.com.br/sportv_sat/index.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", HISTORY
+https://streamer.sattvacabo.com.br/HISTORY_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", HISTORY²
 https://streamer.sattvacabo.com.br/HISTORY_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
+
+
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", NEW BRASIL
 https://rdc1793.github.io/canaisiptv/newbr.m3u8
 
+
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", BAND SPORTS
+
+
 
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", GP TV
@@ -194,8 +202,29 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=16499
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", CAZE TV
 https://rdc1793.github.io/canaisiptv/cazetv.m3u8
 
+
+
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", DISCOVERY
 https://streamer.sattvacabo.com.br/DISCOVERY_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
 
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", DISCOVERY²
+https://streamer.sattvacabo.com.br/DISCOVERY_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+
+
+
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT
 https://streamer.sattvacabo.com.br/TNT_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT²
+https://streamer.sattvacabo.com.br/TNT_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", TNT³
+https://cdn-sp2.satlabscloud.com.br/TNT_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", ESPN 2
+https://cdn-sp2.satlabscloud.com.br/ESPN2_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+
