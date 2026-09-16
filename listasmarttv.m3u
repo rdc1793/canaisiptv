@@ -176,8 +176,8 @@ https://video04.logicahost.com.br/isonata/isonata/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", REVIVA
 
 
-#EXTINF:-1 tvg-logo="" group-title="OUTROS", CURTA
-
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", SPORTV
+https://media.cdntvms.com.br/sportv_sat/index.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", HISTORY
 https://streamer.sattvacabo.com.br/HISTORY_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
