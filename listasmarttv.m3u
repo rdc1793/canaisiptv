@@ -234,3 +234,14 @@ https://streamer.sattvacabo.com.br/SONY_MOVIES/index.m3u8?token=TLGacFXd0gIXIuo2
 
 #EXTINF:-1 tvg-logo="" group-title="OUTROS", SONY MOVIES²
 https://streamer.sattvacabo.com.br/SONY_MOVIES/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", WARNER
+https://streamer.sattvacabo.com.br/WARNER_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+
+#EXTINF:-1 tvg-logo="" group-title="OUTROS", WARNER²
+https://streamer.sattvacabo.com.br/WARNER_HD/index.m3u8?token=TLGacFXd0gIXIuo2u8Zj7f4FE5J2vtgf
+
+
+
+
