@@ -121,11 +121,60 @@ html, body {
     opacity: 0 !important;
     visibility: hidden !important;
 }
+
+
+  /* Tela de fundo preto que cobre o site inteiro */
+#loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Fundo preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Fica acima de qualquer elemento */
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Bola de loading branca */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.1); /* Círculo de fundo (cinza bem escuro) */
+    border-top: 5px solid #ffffff; /* Parte da bola que gira (branca pura) */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animação para fazer a bola girar */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Classe que o JavaScript ativa para sumir com o loading */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+  
 </style>
 </head>
 
 <body>
 
+<!-- Tela de Loading (Coloque logo após o <body>) -->
+<div id="loader-container">
+    <div class="spinner"></div>
+</div>
+
+
+  
 <div id="app">
   <div id="lista">
     <ul id="canais"></ul>
@@ -476,7 +525,19 @@ window.addEventListener('pageshow', function(event) {
         window.location.reload(); // Força a página a recarregar do zero
     }
 });
-  
+
+
+
+
+// Remove a tela de loading assim que a página inteira carregar
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader-container');
+    loader.classList.add('hidden');
+});
+
+
+
+    
 </script>
 
   
