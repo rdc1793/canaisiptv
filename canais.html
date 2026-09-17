@@ -1,9 +1,6 @@
 
-  <!-- v3 -----SMARTTV-IPTV ----------------- -->
 
-
-
-
+<!-- IPTV FIRE TV ALT 1-->
 
 <!DOCTYPE html>
 <html>
@@ -25,6 +22,845 @@ html, body {
 
 #app {
   display: flex;
+}
+
+#lista {
+  width: 1050px;
+  height: 1135px;
+  background: #111;
+  color: #fff;
+  overflow-y: auto;
+  font-size: 30px;
+}
+
+#lista ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#lista li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+#lista li:hover {
+  background: #333;
+}
+
+#lista li.ativo {
+  background: #0431B4;
+}
+
+/* Modificação: Destaque visual para onde o controle remoto está posicionado */
+#lista li.focado {
+  background: #222;
+  border-left: 6px solid #0431B4;
+  padding-left: 4px; 
+}
+
+#player-area {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 400px;
+  height: 380px;
+  z-index: 3000;
+  background: #000;
+}
+
+#player {
+  width: 100%;
+  height: 380px;
+  background: #000;
+}
+
+#reconnect-message {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 10px;
+  display: none;
+  z-index: 10;
+}
+  
+.imagem-fixada {
+    position: fixed;
+    top: 450px;
+    right: 250px;
+    z-index: 999;
+}
+
+.imagem-fixada img {
+    width: 160px;
+    height: 100%;
+    border: 0px solid #fff;
+}
+  
+/* Bloqueios de Buffering do JWPlayer originais mantidos */
+.jwplayer.jw-state-buffering .jw-display-icon-container,
+.jwplayer.jw-state-buffering .jw-display-container,
+.jwplayer.jw-state-buffering .jw-buffer {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.jwplayer .jw-buffer .jw-buffer-spinner,
+.jwplayer .jw-buffer-container {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.jwplayer .jw-icon-display, 
+.jwplayer .jw-display-icon {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+</style>
+</head>
+
+<body>
+
+<div id="app">
+  <div id="lista">
+    <ul id="canais"></ul>
+  </div>
+
+  <div id="player-area">
+    <div id="player">Carregando…</div>
+    <div id="reconnect-message">🔄 Reconectando…</div>
+  </div>
+</div>
+
+<script src="https://rdc1793.github.io/canaisiptv/jwplayer.js"></script>
+<script>
+jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
+</script>
+
+<script>
+/* CONFIG - Listas m3u */
+var M3U_URLS = [
+  
+  "https://rdc1793.github.io/canaisiptv/listasmarttv.m3u",
+  
+  "https://raw.githubusercontent.com/embedplay/linkplay/refs/heads/main/live.m3u",
+  
+  "https://raw.githubusercontent.com/newclews/iptvlist/refs/heads/main/iptv.m3u",
+  
+  "https://raw.githubusercontent.com/Billy-KreK/iptv-publico/refs/heads/main/Canais%20ML.m3u"
+  
+];  
+  
+/* ESTADO */
+var canais = [];
+var canalAtual = 0;
+var canalFocado = 0; 
+var player;
+var errorCount = 0;
+
+/* Modificação: Variáveis para controle do carregamento sob demanda */
+var canaisExibidos = 0;
+var canaisPorPagina = 50; 
+
+/* ELEMENTOS */
+var ul = document.getElementById("canais");
+var listaContainer = document.getElementById("lista");
+var reconnectMsg = document.getElementById("reconnect-message");
+
+/* M3U Parser original mantido */
+function carregarM3U(url) {
+  return new Promise(function(resolve) {
+    var x = new XMLHttpRequest();
+    x.open("GET", url, true);
+    x.onreadystatechange = function () {
+      if (x.readyState === 4) {
+        if (x.status === 200) {
+          resolve(parseM3U(x.responseText));
+        } else {
+          resolve([]); 
+        }
+      }
+    };
+    x.send();
+  });
+}
+
+function parseM3U(txt) {
+  var linhas = txt.split("\n");
+  var lista = [];
+  var nome = "Canal";
+
+  for (var i = 0; i < linhas.length; i++) {
+    var l = linhas[i].trim();
+    if (l.indexOf("#EXTINF") === 0) {
+      nome = l.split(",").pop();
+    } else if (l.indexOf("http") === 0 && l.indexOf("sattvacabo") !== -1 || l.indexOf("stmv2.voxtvhd.com.br/keynni6990/keynni6990/") !== -1 || l.indexOf("video04.logicahost.com.br/isonata/isonata/") !== -1 || l.indexOf("canaisiptv/food") !== -1 || l.indexOf("canaisiptv/Turismo") !== -1 || l.indexOf("canaisiptv/CHits") !== -1 || l.indexOf("canaisiptv/Canal38") !== -1 || l.indexOf("canaisiptv/sonycinema") !== -1 || l.indexOf("canaisiptv/EBC") !== -1 || l.indexOf("canaisiptv/news") !== -1 || l.indexOf("stream.ads.ottera.tv/playlist.m3u8?network_id=") !== -1 || l.indexOf("cdntvms") !== -1 || l.indexOf("cr7v.short.gy") !== -1 || l.indexOf("linkplay.short.gy/GLOBONEWS") !== -1 || l.indexOf("cdn.live.br1") !== -1) {
+      lista.push({ title: nome, file: l });
+    }
+  }
+  return lista;
+}
+
+/* Modificação: Função reescrita para renderizar em blocos de 50 usando DocumentFragment */
+function renderLista(limparTudo) {
+  if (limparTudo) {
+    ul.innerHTML = "";
+    canaisExibidos = 0;
+  }
+
+  var fragmento = document.createDocumentFragment();
+  var fim = Math.min(canaisExibidos + canaisPorPagina, canais.length);
+
+  for (var i = canaisExibidos; i < fim; i++) {
+    (function (index) {
+      var li = document.createElement("li");
+      li.innerHTML = canais[index].title;
+      
+      if (index === canalAtual) li.classList.add("ativo");
+      if (index === canalFocado) li.classList.add("focado"); 
+      
+      li.onclick = function () { 
+        canalFocado = index;
+        tocarCanal(index); 
+      };
+      fragmento.appendChild(li);
+    })(i);
+  }
+
+  ul.appendChild(fragmento);
+  canaisExibidos = fim;
+}
+
+/* Modificação: Monitor de rolagem do contêiner para carregar mais itens no Mouse/Touch */
+listaContainer.addEventListener("scroll", function() {
+  if (listaContainer.scrollTop + listaContainer.clientHeight >= listaContainer.scrollHeight - 150) {
+    if (canaisExibidos < canais.length) {
+      renderLista(false);
+    }
+  }
+});
+
+/* Modificação: Captura de comandos do controle remoto e rolagem automática por foco */
+document.addEventListener("keydown", function(e) {
+  var itens = ul.getElementsByTagName("li");
+  if (itens.length === 0) return;
+
+  var alterou = false;
+
+  if (e.keyCode === 40) { // Seta para baixo
+    if (canalFocado < canais.length - 1) {
+      canalFocado++;
+      alterou = true;
+      
+      if (canalFocado >= canaisExibidos - 5 && canaisExibidos < canais.length) {
+        renderLista(false);
+        itens = ul.getElementsByTagName("li"); 
+      }
+    }
+    e.preventDefault();
+  }
+  else if (e.keyCode === 38) { // Seta para cima
+    if (canalFocado > 0) {
+      canalFocado--;
+      alterou = true;
+    }
+    e.preventDefault();
+  }
+  
+  /* Insira este trecho dentro do seu `document.addEventListener("keydown", function(e) { ... })` */
+
+if (e.keyCode === 37) { // Seta para a ESQUERDA no controle do Fire Stick
+    var tempoAtual = player.getPosition();
+    player.seek(tempoAtual - 10); // Volta 10 segundos no DVR
+    e.preventDefault();
+}
+else if (e.keyCode === 39) { // Seta para a DIREITA no controle do Fire Stick
+    var tempoAtual = player.getPosition();
+    player.seek(tempoAtual + 10); // Avança 10 segundos no DVR
+    e.preventDefault();
+}
+
+  
+  else if (e.keyCode === 13 || e.keyCode === 23) { // Botão OK / Center
+    tocarCanal(canalFocado);
+    e.preventDefault();
+  }
+
+  if (alterou) {
+    for (var k = 0; k < itens.length; k++) {
+      itens[k].classList.remove("focado");
+    }
+    
+    if (itens[canalFocado]) {
+      itens[canalFocado].classList.add("focado");
+      
+      itens[canalFocado].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+      });
+    }
+  }
+});
+
+/* Player Base e Lógica de Erros original mantidos */
+function iniciarPlayer() {
+  if (canais.length === 0) {
+    document.getElementById("player").innerHTML = "Nenhum canal encontrado nas listas.";
+    return;
+  }
+
+  player = jwplayer("player").setup({
+    file: canais[0].file, 
+    width: "100%",
+    height: 380,
+    autostart: true,
+    controls: true,
+    hlshtml: true,
+    
+    dvr: true,                         // Força o player a exibir a barra de busca em streams ao vivo
+    liveTimeout: 3600,                   // Tempo em segundos para considerar que o usuário ficou muito para trás
+    type: "hls",
+    
+    preload: "auto",
+    stretching: "uniform",
+    events: {
+      
+      
+      
+      /*
+      onPlay: function () {
+        reconnectMsg.style.display = "none";
+        errorCount = 0;
+      },
+      */
+      
+      
+      onPlay: function () {
+        reconnectMsg.style.display = "none";
+        errorCount = 0;
+
+        // CRUCIAL: Quando o canal começar, joga o player 30 segundos para trás.
+        // Isso cria o "atraso seguro" estilo YouTube para evitar travamentos.
+        setTimeout(function() {
+          try {
+            // Verifica se o player realmente suporta o DVR antes de aplicar o delay
+            if (player.getDuration() < 0) { 
+              player.seek(-30); 
+            }
+          } catch(e) {}
+        }, 1000); // Aguarda 1 segundo para o player estabilizar o manifesto
+      },
+      
+      
+      
+      onError: function () {
+        errorCount++;
+        reconnectMsg.style.display = "block";
+
+        if (errorCount < 4) {
+          setTimeout(function () {
+            tocarCanal(canalAtual);
+          }, 3000);
+        } else {
+          canalAtual++; 
+          if (canalAtual >= canais.length) canalAtual = 0;
+          canalFocado = canalAtual;
+          tocarCanal(canalAtual);
+          errorCount = 0;
+        }
+      },
+      onIdle: function (e) {
+        if (e.reason === "error") {
+          errorCount++;
+          if (errorCount < 4) {
+            tocarCanal(canalAtual);
+          } else {
+            canalAtual++;
+            if (canalAtual >= canais.length) canalAtual = 0;
+            canalFocado = canalAtual;
+            tocarCanal(canalAtual);
+            errorCount = 0;
+          }
+        }
+      }
+    }
+  });
+
+  renderLista(true);
+}
+
+/* Modificação: Função tocarCanal reescrita para atualizar classes sem recriar a lista toda */
+function tocarCanal(i) {
+  if (canais.length === 0) return;
+  canalAtual = i;
+  reconnectMsg.style.display = "none";
+
+  player.stop();
+  player.load({ file: canais[i].file });
+  player.play();
+
+  setTimeout(function () {
+    try { player.setFullscreen(true); } catch (e) {}
+  }, 300);
+
+  var itens = ul.getElementsByTagName("li");
+  for (var k = 0; k < itens.length; k++) {
+    itens[k].classList.remove("ativo");
+  }
+  if (itens[i]) {
+     itens[i].classList.add("ativo");
+  }
+}
+
+/* Promise para listas originais mantida */
+var requisicoes = M3U_URLS.map(function(url) {
+  return carregarM3U(url);
+});
+
+Promise.all(requisicoes).then(function(resultados) {
+  canais = [].concat.apply([], resultados);
+  iniciarPlayer();
+});
+  
+  
+  
+  
+  
+  
+</script>
+
+<div class="imagem-fixada">GUIA TV:<br>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmi4ezxLy54BEXdVl3wKzF1lYZpBtCdmE_tWxM5igp-LsfvZ6UDPV4xwH1dQMAb17BOVH4N0Rx6bHRZYLZW2trlhOVBD1808luyhSxIx8Av5EvF-rbZr5gnFpZTRDQZSUj0olpFfqCDZmn2IiqhNbvkpkP-TpPSwTSVFaVVAzPdI6t3QiZ2ySIGzC8M_U/s450/qrcode_canaissattv.blogspot.com_epg_aberta.png" alt=" QR Code">
+</div> 
+
+  
+  
+  <script type="text/javascript">
+function apagarTodasAsMarcas() {
+    // 1. Limpa o LocalStorage (tokens, logins modernos e preferências)
+    localStorage.clear();
+
+    // 2. Limpa o SessionStorage (dados da aba atual)
+    sessionStorage.clear();
+
+    // 3. Limpa todos os Cookies de forma agressiva
+    const cookies = document.cookie.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i];
+        const eqPos = cookie.indexOf("=");
+        const nome = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+        
+        // Remove o cookie testando diferentes caminhos e domínios comuns
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window.location.hostname;
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
+    }
+    console.log("Todas as marcas locais foram apagadas.");
+}
+
+// Executa a limpeza assim que a página carrega
+window.addEventListener('load', apagarTodasAsMarcas);
+
+// Executa a limpeza preventiva quando o usuário sai ou atualiza a página
+window.addEventListener('beforeunload', apagarTodasAsMarcas); 
+  // Detecta se o usuário voltou usando as setas do navegador (Histórico/Cache)
+window.addEventListener('pageshow', function(event) {
+    // Se event.persisted for verdadeiro, significa que a página veio do cache "Voltar"
+    if (event.persisted) {
+        apagarTodasAsMarcas();    // Executa a limpeza dos dados
+        window.location.reload(); // Força a página a recarregar do zero
+    }
+});
+  
+</script>
+
+  
+</body>
+</html>
+
+
+
+
+<!-- IPTV Fire TV alt 2 -->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CANAIS - IPTV - Fire TV</title>
+
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  display: flex;
+}
+
+#lista {
+  width: 1050px;
+  height: 1135px;
+  background: #111;
+  color: #fff;
+  overflow-y: auto;
+  font-size: 30px;
+}
+
+#lista ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#lista li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+#lista li:hover {
+  background: #333;
+}
+
+#lista li.ativo {
+  background: #0431B4;
+}
+
+#player-area {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 400px;
+  height: 380px;
+  z-index: 3000;
+  background: #000;
+}
+
+#player {
+  width: 100%;
+  height: 380px;
+  background: #000;
+}
+
+#reconnect-message {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 10px;
+  display: none;
+  z-index: 10;
+}
+  
+.imagem-fixada {
+    position: fixed;
+    top: 450px;
+    right: 250px;
+    z-index: 999;
+}
+
+.imagem-fixada img {
+    width: 160px;
+    height: 100%;
+    border: 0px solid #fff;
+}
+  
+/* 1. Bloqueia e esconde o contêiner de buffer quando o player entra em estado de carregamento */
+.jwplayer.jw-state-buffering .jw-display-icon-container,
+.jwplayer.jw-state-buffering .jw-display-container,
+.jwplayer.jw-state-buffering .jw-buffer {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* 2. Zera as propriedades de animação (impede a bola branca de desenhar na tela) */
+.jwplayer .jw-buffer .jw-buffer-spinner,
+.jwplayer .jw-buffer-container {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+/* 3. Garante que o ícone de display central suma por completo */
+.jwplayer .jw-icon-display, 
+.jwplayer .jw-display-icon {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+</style>
+</head>
+
+<body>
+
+<div id="app">
+  <div id="lista">
+    <ul id="canais"></ul>
+  </div>
+
+  <div id="player-area">
+    <div id="player">Carregando…</div>
+    <div id="reconnect-message">🔄 Reconectando…</div>
+  </div>
+</div>
+
+<script src="https://rdc1793.github.io/canaisiptv/jwplayer.js"></script>
+<script>
+jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
+</script>
+
+<script>
+/* CONFIG - Adicione todas as suas listas dentro deste array separadas por vírgula */
+var M3U_URLS = [
+  "https://rdc1793.github.io/canaisiptv/listasmarttv.m3u",
+  "https://raw.githubusercontent.com/embedplay/linkplay/refs/heads/main/live.m3u",
+  
+  "https://raw.githubusercontent.com/newclews/iptvlist/refs/heads/main/iptv.m3u",
+  
+  "https://raw.githubusercontent.com/Billy-KreK/iptv-publico/refs/heads/main/Canais%20ML.m3u"
+];  
+  
+/* ESTADO */
+var canais = [];
+var canalAtual = 0;
+var player;
+var errorCount = 0;
+
+/* ELEMENTOS */
+var ul = document.getElementById("canais");
+var reconnectMsg = document.getElementById("reconnect-message");
+
+/* ===== M3U (Modificado para múltiplas listas) ===== */
+function carregarM3U(url) {
+  return new Promise(function(resolve) {
+    var x = new XMLHttpRequest();
+    x.open("GET", url, true);
+    x.onreadystatechange = function () {
+      if (x.readyState === 4) {
+        if (x.status === 200) {
+          resolve(parseM3U(x.responseText));
+        } else {
+          resolve([]); // Se uma lista falhar, retorna vazio para não travar as outras
+        }
+      }
+    };
+    x.send();
+  });
+}
+
+function parseM3U(txt) {
+  var linhas = txt.split("\n");
+  var lista = [];
+  var nome = "Canal";
+
+  for (var i = 0; i < linhas.length; i++) {
+    var l = linhas[i].trim();
+    if (l.indexOf("#EXTINF") === 0) {
+      nome = l.split(",").pop();
+    } else if (l.indexOf("http") === 0 && l.indexOf("sattvacabo") !== -1 || l.indexOf("stmv2.voxtvhd.com.br/keynni6990/keynni6990/") !== -1 || l.indexOf("video04.logicahost.com.br/isonata/isonata/") !== -1 || l.indexOf("canaisiptv/food") !== -1 || l.indexOf("canaisiptv/Turismo") !== -1 || l.indexOf("canaisiptv/CHits") !== -1 || l.indexOf("canaisiptv/Canal38") !== -1 || l.indexOf("canaisiptv/sonycinema") !== -1 || l.indexOf("canaisiptv/EBC") !== -1 || l.indexOf("canaisiptv/news") !== -1 || l.indexOf("stream.ads.ottera.tv/playlist.m3u8?network_id=") !== -1 || l.indexOf("cdntvms") !== -1 || l.indexOf("cr7v.short.gy") !== -1 || l.indexOf("linkplay.short.gy/GLOBONEWS") !== -1 || l.indexOf("cdn.live.br1") !== -1) {
+      lista.push({ title: nome, file: l });
+    }
+  }
+  return lista;
+}
+
+/* ===== LISTA ===== */
+function renderLista() {
+  ul.innerHTML = "";
+  for (var i = 0; i < canais.length; i++) {
+    (function (i) {
+      var li = document.createElement("li");
+      li.innerHTML = canais[i].title;
+      if (i === canalAtual) li.className = "ativo";
+      li.onclick = function () { tocarCanal(i); };
+      ul.appendChild(li);
+    })(i);
+  }
+}
+
+/* ===== PLAYER ===== */
+function iniciarPlayer() {
+  if (canais.length === 0) {
+    document.getElementById("player").innerHTML = "Nenhum canal encontrado nas listas.";
+    return;
+  }
+
+  player = jwplayer("player").setup({
+    file: canais[0].file, // Corrigido para carregar a primeira URL válida da lista combinada
+    width: "100%",
+    height: 380,
+    autostart: true,
+    controls: true,
+    hlshtml: true,
+    preload: "metadata",
+    stretching: "uniform",
+    events: {
+      onPlay: function () {
+        reconnectMsg.style.display = "none";
+        errorCount = 0;
+      },
+      onError: function () {
+        errorCount++;
+        reconnectMsg.style.display = "block";
+
+        if (errorCount < 4) {
+          setTimeout(function () {
+            tocarCanal(canalAtual);
+          }, 3000);
+        } else {
+          canalAtual++; 
+          if (canalAtual >= canais.length) canalAtual = 0;
+          tocarCanal(canalAtual);
+          errorCount = 0;
+        }
+      },
+      onIdle: function (e) {
+        if (e.reason === "error") {
+          errorCount++;
+          if (errorCount < 4) {
+            tocarCanal(canalAtual);
+          } else {
+            canalAtual++;
+            if (canalAtual >= canais.length) canalAtual = 0;
+            tocarCanal(canalAtual);
+            errorCount = 0;
+          }
+        }
+      }
+    }
+  });
+
+  renderLista();
+}
+
+/* ===== TOCAR CANAL ===== */
+function tocarCanal(i) {
+  if (canais.length === 0) return;
+  canalAtual = i;
+  reconnectMsg.style.display = "none";
+
+  player.stop();
+  player.load({ file: canais[i].file });
+  player.play();
+
+  setTimeout(function () {
+    try { player.setFullscreen(true); } catch (e) {}
+  }, 300);
+
+  renderLista();
+}
+
+/* CARREGAMENTO EM MASSA (Asíncrono) */
+var requisicoes = M3U_URLS.map(function(url) {
+  return carregarM3U(url);
+});
+
+Promise.all(requisicoes).then(function(resultados) {
+  // Une todos os canais de todas as listas carregadas em uma só array
+  canais = [].concat.apply([], resultados);
+  iniciarPlayer();
+});
+</script>
+
+<div class="imagem-fixada">GUIA TV:<br>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmi4ezxLy54BEXdVl3wKzF1lYZpBtCdmE_tWxM5igp-LsfvZ6UDPV4xwH1dQMAb17BOVH4N0Rx6bHRZYLZW2trlhOVBD1808luyhSxIx8Av5EvF-rbZr5gnFpZTRDQZSUj0olpFfqCDZmn2IiqhNbvkpkP-TpPSwTSVFaVVAzPdI6t3QiZ2ySIGzC8M_U/s450/qrcode_canaissattv.blogspot.com_epg_aberta.png" alt=" QR Code">
+</div> 
+
+<script type="text/javascript">
+function apagarTodasAsMarcas() {
+    // 1. Limpa o LocalStorage (tokens, logins modernos e preferências)
+    localStorage.clear();
+
+    // 2. Limpa o SessionStorage (dados da aba atual)
+    sessionStorage.clear();
+
+    // 3. Limpa todos os Cookies de forma agressiva
+    const cookies = document.cookie.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i];
+        const eqPos = cookie.indexOf("=");
+        const nome = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+        
+        // Remove o cookie testando diferentes caminhos e domínios comuns
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window.location.hostname;
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
+    }
+    console.log("Todas as marcas locais foram apagadas.");
+}
+
+// Executa a limpeza assim que a página carrega
+window.addEventListener('load', apagarTodasAsMarcas);
+
+// Executa a limpeza preventiva quando o usuário sai ou atualiza a página
+window.addEventListener('beforeunload', apagarTodasAsMarcas); 
+  // Detecta se o usuário voltou usando as setas do navegador (Histórico/Cache)
+window.addEventListener('pageshow', function(event) {
+    // Se event.persisted for verdadeiro, significa que a página veio do cache "Voltar"
+    if (event.persisted) {
+        apagarTodasAsMarcas();    // Executa a limpeza dos dados
+        window.location.reload(); // Força a página a recarregar do zero
+    }
+});
+  
+</script>
+
+</body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+
+
+<!-- IPTV Fire TV alt 3 -->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CANAIS - IPTV - Fire TV</title>
+
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-family: Arial, sans-serif;
+  
+  
+}
+
+#app {
+  display: flex;
  
   
   
@@ -32,10 +868,12 @@ html, body {
 
 #lista {
   width: 1050px;
-  height: 400px;
+  height: 1050px;
   background: #111;
   color: #fff;
+  
   overflow-y: auto;
+  
   font-size: 30px;
 }
 
@@ -100,7 +938,7 @@ html, body {
 }
   
   
-  /* 1. Bloqueia e esconde o contêiner de buffer quando o player entra em estado de carregamento */
+/* 1. Bloqueia e esconde o contêiner de buffer quando o player entra em estado de carregamento */
 .jwplayer.jw-state-buffering .jw-display-icon-container,
 .jwplayer.jw-state-buffering .jw-display-container,
 .jwplayer.jw-state-buffering .jw-buffer {
@@ -126,13 +964,20 @@ html, body {
 
 
   
+  
+  
+
+  
+  
+  
+  
 </style>
 </head>
 
 <body>
 
 <div id="app">
-  <div id="lista">
+  <div id="lista"   >
     <ul id="canais"></ul>
   </div>
 
@@ -149,8 +994,15 @@ jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
 
 <script>
 /* CONFIG */
-var M3U_URL = "https://rdc1793.github.io/canaisiptv/listasmarttv.m3u";
+  
+var M3U_URL = "https://raw.githubusercontent.com/Billy-KreK/iptv-publico/refs/heads/main/Canais%20ML.m3u";  
+  
 
+/*
+var M3U_URL = "https://raw.githubusercontent.com/newclews/iptvlist/d20aac9cc0d095555ec8abe8b3f93b15cebae4f8/iptv.m3u";
+*/
+  
+  
 /* ESTADO */
 var canais = [];
 var canalAtual = 0;
@@ -182,7 +1034,17 @@ function parseM3U(txt) {
     var l = linhas[i].trim();
     if (l.indexOf("#EXTINF") === 0) {
       nome = l.split(",").pop();
-    } else if (l.indexOf("https") === 0 && l.indexOf("m3u8") !== -1) {
+    } else if (l.indexOf("http") === 0 
+          
+               
+            && l.indexOf("sattvacabo") !== -1
+               
+               
+               
+        /*       && l.indexOf("m3u8") !== -1 && l.indexOf("index") === -1 && l.indexOf("leiniao") === -1 && l.indexOf("x1co") === -1 && l.indexOf("jmp2") === -1 && l.indexOf("13027") === -1 && l.indexOf("netplus") === -1 && l.indexOf("tvnow") === -1 && l.indexOf("isgo") === -1 && l.indexOf("hplay") === -1 && l.indexOf("megaflix") === -1 && l.indexOf("sinalmycn") === -1 && l.indexOf("15883") === -1 && l.indexOf("playtv") === -1 && l.indexOf("traceurban") === -1 && l.indexOf("cb18a3c3c72d4dd098bd37ee45124cfe") === -1 && l.indexOf("ebc") === -1 && l.indexOf("soultv") === -1 && l.indexOf("ts-us-w2-n1") === -1 && l.indexOf("tvi") === -1 && l.indexOf("ultrabase") === -1 && l.indexOf("azt") === -1 && l.indexOf("latina") === -1 && l.indexOf("rttv") === -1 && l.indexOf("nxtv") === -1 && l.indexOf("nxplay") === -1 && l.indexOf("sbtinfast") === -1 && l.indexOf("maissbt") === -1 && l.indexOf("ts-us-w2-n1") === -1 && l.indexOf("mdstrm") === -1 && l.indexOf("hrm") === -1 && l.indexOf("ecable") === -1 && l.indexOf("msvdn") === -1 && l.indexOf("amagi.tv/") === -1 && l.indexOf("globo") === -1 && l.indexOf("senado") === -1 && l.indexOf("bozztv") === -1 && l.indexOf("samsungtvplus") === -1 && l.indexOf("wurl.tv/") === -1 && l.indexOf("hls-web-") === -1 && l.indexOf("d38s7rrdbnh4oy") === -1  */
+              
+              
+              ) {
       lista.push({ title: nome, file: l });
     }
   }
@@ -212,41 +1074,13 @@ function iniciarPlayer() {
     autostart: true,
     controls: true,
     hlshtml: true,
-    
-    dvr: true,                         // Força o player a exibir a barra de busca em streams ao vivo
-    liveTimeout: 3600,                   // Tempo em segundos para considerar que o usuário ficou muito para trás
-    type: "hls",
-    
-    preload: "auto",
+    preload: "metadata",
     stretching: "uniform",
     events: {
-          
-      /*
       onPlay: function () {
         reconnectMsg.style.display = "none";
         errorCount = 0;
       },
-      */
-      
-      
-      onPlay: function () {
-        reconnectMsg.style.display = "none";
-        errorCount = 0;
-
-        // CRUCIAL: Quando o canal começar, joga o player 30 segundos para trás.
-        // Isso cria o "atraso seguro" estilo YouTube para evitar travamentos.
-        setTimeout(function() {
-          try {
-            // Verifica se o player realmente suporta o DVR antes de aplicar o delay
-            if (player.getDuration() < 0) { 
-              player.seek(-30); 
-            }
-          } catch(e) {}
-        }, 1000); // Aguarda 1 segundo para o player estabilizar o manifesto
-      },
-      
-      
-      
       onError: function () {
         errorCount++;
         reconnectMsg.style.display = "block";
@@ -291,6 +1125,8 @@ function iniciarPlayer() {
   renderLista();
 }
 
+
+
 /* ===== TOCAR CANAL ===== */
 function tocarCanal(i) {
   canalAtual = i;
@@ -320,233 +1156,8 @@ carregarM3U(M3U_URL, function (lista) {
 
 
 <div class="imagem-fixada">GUIA TV:<br>
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmi4ezxLy54BEXdVl3wKzF1lYZpBtCdmE_tWxM5igp-LsfvZ6UDPV4xwH1dQMAb17BOVH4N0Rx6bHRZYLZW2trlhOVBD1808luyhSxIx8Av5EvF-rbZr5gnFpZTRDQZSUj0olpFfqCDZmn2IiqhNbvkpkP-TpPSwTSVFaVVAzPdI6t3QiZ2ySIGzC8M_U/s450/qrcode_canaissattv.blogspot.com_epg_aberta.png" alt=" QR Code">
+        <img src="http://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmi4ezxLy54BEXdVl3wKzF1lYZpBtCdmE_tWxM5igp-LsfvZ6UDPV4xwH1dQMAb17BOVH4N0Rx6bHRZYLZW2trlhOVBD1808luyhSxIx8Av5EvF-rbZr5gnFpZTRDQZSUj0olpFfqCDZmn2IiqhNbvkpkP-TpPSwTSVFaVVAzPdI6t3QiZ2ySIGzC8M_U/s450/qrcode_canaissattv.blogspot.com_epg_aberta.png" alt=" QR Code">
     </div> 
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>CANAIS - SMARTTV</title>
-
-<style>
-* { box-sizing: border-box; }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  font-family: Arial, sans-serif;
-}
-
-/* APP */
-#app {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* LISTA */
-#lista {
-  width: 1050px;
-  height: 400px;
-  background: #111;
-  color: #fff;
-  overflow-y: auto;
-}
-
-#lista ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#lista li {
-  padding: 10px;
-  border-bottom: 1px solid #333;
-  cursor: pointer;
-}
-
-#lista li:hover {
-  background: #333;
-}
-
-#lista li.ativo {
-  background: #1e90ff;
-}
-
-/* PLAYER */
-#player-area {
-  position: fixed;
-      top: 10px;
-      right: 10px;
-      min-width: 400px !important;
-      width: 400px;
-      height: 380px;
-      z-index: 3000;
-      background: #000 !important;
-      display: block !important;
-}
-
-#player {
-  width: 100%;
-  height: 380px;
-  background: #000;
-}
-
-/* MENSAGEM */
-#reconnect-message {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(0,0,0,0.7);
-  color: #fff;
-  padding: 6px 10px;
-  display: none;
-  z-index: 10;
-}
-</style>
-</head>
-
-<body>
-
-<div id="app">
-  <div id="lista">
-    <ul id="canais"></ul>
-  </div>
-
-  <div id="player-area">
-    <div id="player">Carregando…</div>
-    <div id="reconnect-message">🔄 Reconectando…</div>
-  </div>
-</div>
-
-
-<script src="https://rdc1793.github.io/canaisiptv/jwplayer.js"></script>
-<script>
-jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
-</script>
-
-<script>
-/* CONFIG */
-var M3U_URL = "https://rdc1793.github.io/canaisiptv/listch.m3u";
-
-/* ESTADO */
-var canais = [];
-var canalAtual = -1;
-var player;
-var errorCount = 0;
-
-/* ELEMENTOS */
-var ul = document.getElementById("canais");
-var reconnectMsg = document.getElementById("reconnect-message");
-
-/* ===== M3U ===== */
-function carregarM3U(url, cb) {
-  var x = new XMLHttpRequest();
-  x.open("GET", url, true);
-  x.onreadystatechange = function () {
-    if (x.readyState === 4 && x.status === 200) {
-      cb(parseM3U(x.responseText));
-    }
-  };
-  x.send();
-}
-
-function parseM3U(txt) {
-  var linhas = txt.split("\n");
-  var lista = [];
-  var nome = "Canal";
-
-  for (var i = 0; i < linhas.length; i++) {
-    var l = linhas[i].trim();
-    if (l.indexOf("#EXTINF") === 0) {
-      nome = l.split(",").pop();
-    } else if (l.indexOf("http") === 0) {
-      lista.push({ title: nome, file: l });
-    }
-  }
-  return lista;
-}
-
-/* ===== LISTA ===== */
-function renderLista() {
-  ul.innerHTML = "";
-
-  for (var i = 0; i < canais.length; i++) {
-    (function (i) {
-      var li = document.createElement("li");
-      li.innerHTML = canais[i].title;
-      if (i === canalAtual) li.className = "ativo";
-      li.onclick = function () {
-        tocarCanal(i);
-      };
-      ul.appendChild(li);
-    })(i);
-  }
-}
-
-/* ===== PLAYER ===== */
-function iniciarPlayer() {
-  player = jwplayer("player").setup({
-    file: canais[0].file,
-    width: "100%",
-    height: 380,
-    autostart: true,
-    controls: true,
-    hlshtml: true,
-    preload: "none",
-    stretching: "uniform"
-  });
-
-  canalAtual = 0;
-  renderLista();
-}
-
-function tocarCanal(i) {
-  canalAtual = i;
-  reconnectMsg.style.display = "none";
-
-  player.stop();
-  player.load({ file: canais[i].file });
-  player.play();
-
-  // 👉 FULLSCREEN NATIVO DO JW PLAYER
-  setTimeout(function () {
-    try {
-      player.setFullscreen(true);
-    } catch (e) {}
-  }, 300);
-
-  renderLista();
-}
-
-/* START */
-carregarM3U(M3U_URL, function (lista) {
-  canais = lista;
-  iniciarPlayer();
-});
-</script>
-
-</body>
-</html>
--->
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -591,6 +1202,5 @@ window.addEventListener('pageshow', function(event) {
   
 </script>
 
-
-
+-->
 
