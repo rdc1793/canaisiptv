@@ -413,7 +413,7 @@ function iniciarPlayer() {
         errorCount++;
         reconnectMsg.style.display = "block";
 
-        if (errorCount < 4) {
+        if (errorCount < 2) {
           setTimeout(function () {
             tocarCanal(canalAtual);
           }, 3000);
@@ -428,7 +428,7 @@ function iniciarPlayer() {
       onIdle: function (e) {
         if (e.reason === "error") {
           errorCount++;
-          if (errorCount < 4) {
+          if (errorCount < 2) {
             tocarCanal(canalAtual);
           } else {
             canalAtual++;
@@ -485,7 +485,7 @@ Promise.all(requisicoes).then(function(resultados) {
   
 </script>
 
-<div class="imagem-fixada">GUIA TV:<br>
+<div class="imagem-fixada" style="color: white; font-weight: bold;">GUIA TV:<br>
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmi4ezxLy54BEXdVl3wKzF1lYZpBtCdmE_tWxM5igp-LsfvZ6UDPV4xwH1dQMAb17BOVH4N0Rx6bHRZYLZW2trlhOVBD1808luyhSxIx8Av5EvF-rbZr5gnFpZTRDQZSUj0olpFfqCDZmn2IiqhNbvkpkP-TpPSwTSVFaVVAzPdI6t3QiZ2ySIGzC8M_U/s450/qrcode_canaissattv.blogspot.com_epg_aberta.png" alt=" QR Code">
 </div> 
 
