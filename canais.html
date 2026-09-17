@@ -1,0 +1,596 @@
+
+  <!-- v3 -----SMARTTV-IPTV ----------------- -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CANAIS - IPTV</title>
+
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  display: flex;
+ 
+  
+  
+}
+
+#lista {
+  width: 1050px;
+  height: 400px;
+  background: #111;
+  color: #fff;
+  overflow-y: auto;
+  font-size: 30px;
+}
+
+#lista ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#lista li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+#lista li:hover {
+  background: #333;
+}
+
+#lista li.ativo {
+  background: #0431B4;
+}
+
+#player-area {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 400px;
+  height: 380px;
+  z-index: 3000;
+  background: #000;
+}
+
+#player {
+  width: 100%;
+  height: 380px;
+  background: #000;
+}
+
+#reconnect-message {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 10px;
+  display: none;
+  z-index: 10;
+}
+  
+  
+ .imagem-fixada {
+    position: fixed;
+    top: 450px;
+    right: 250px;
+    z-index: 999;
+}
+.imagem-fixada img {
+    width: 160px;
+    height: 100%;
+    border: 0px solid #fff;
+}
+  
+  
+  /* 1. Bloqueia e esconde o contêiner de buffer quando o player entra em estado de carregamento */
+.jwplayer.jw-state-buffering .jw-display-icon-container,
+.jwplayer.jw-state-buffering .jw-display-container,
+.jwplayer.jw-state-buffering .jw-buffer {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* 2. Zera as propriedades de animação (impede a bola branca de desenhar na tela) */
+.jwplayer .jw-buffer .jw-buffer-spinner,
+.jwplayer .jw-buffer-container {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+/* 3. Garante que o ícone de display central suma por completo */
+.jwplayer .jw-icon-display, 
+.jwplayer .jw-display-icon {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+
+  
+</style>
+</head>
+
+<body>
+
+<div id="app">
+  <div id="lista">
+    <ul id="canais"></ul>
+  </div>
+
+  <div id="player-area">
+    <div id="player">Carregando…</div>
+    <div id="reconnect-message">🔄 Reconectando…</div>
+  </div>
+</div>
+
+<script src="https://rdc1793.github.io/canaisiptv/jwplayer.js"></script>
+<script>
+jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
+</script>
+
+<script>
+/* CONFIG */
+var M3U_URL = "https://rdc1793.github.io/canaisiptv/listasmarttv.m3u";
+
+/* ESTADO */
+var canais = [];
+var canalAtual = 0;
+var player;
+var errorCount = 0;
+
+/* ELEMENTOS */
+var ul = document.getElementById("canais");
+var reconnectMsg = document.getElementById("reconnect-message");
+
+/* ===== M3U ===== */
+function carregarM3U(url, cb) {
+  var x = new XMLHttpRequest();
+  x.open("GET", url, true);
+  x.onreadystatechange = function () {
+    if (x.readyState === 4 && x.status === 200) {
+      cb(parseM3U(x.responseText));
+    }
+  };
+  x.send();
+}
+
+function parseM3U(txt) {
+  var linhas = txt.split("\n");
+  var lista = [];
+  var nome = "Canal";
+
+  for (var i = 0; i < linhas.length; i++) {
+    var l = linhas[i].trim();
+    if (l.indexOf("#EXTINF") === 0) {
+      nome = l.split(",").pop();
+    } else if (l.indexOf("https") === 0 && l.indexOf("m3u8") !== -1) {
+      lista.push({ title: nome, file: l });
+    }
+  }
+  return lista;
+}
+
+/* ===== LISTA ===== */
+function renderLista() {
+  ul.innerHTML = "";
+  for (var i = 0; i < canais.length; i++) {
+    (function (i) {
+      var li = document.createElement("li");
+      li.innerHTML = canais[i].title;
+      if (i === canalAtual) li.className = "ativo";
+      li.onclick = function () { tocarCanal(i); };
+      ul.appendChild(li);
+    })(i);
+  }
+}
+
+/* ===== PLAYER ===== */
+function iniciarPlayer() {
+  player = jwplayer("player").setup({
+    file: canais[0].file,
+    width: "100%",
+    height: 380,
+    autostart: true,
+    controls: true,
+    hlshtml: true,
+    
+    dvr: true,                         // Força o player a exibir a barra de busca em streams ao vivo
+    liveTimeout: 3600,                   // Tempo em segundos para considerar que o usuário ficou muito para trás
+    type: "hls",
+    
+    preload: "auto",
+    stretching: "uniform",
+    events: {
+          
+      /*
+      onPlay: function () {
+        reconnectMsg.style.display = "none";
+        errorCount = 0;
+      },
+      */
+      
+      
+      onPlay: function () {
+        reconnectMsg.style.display = "none";
+        errorCount = 0;
+
+        // CRUCIAL: Quando o canal começar, joga o player 30 segundos para trás.
+        // Isso cria o "atraso seguro" estilo YouTube para evitar travamentos.
+        setTimeout(function() {
+          try {
+            // Verifica se o player realmente suporta o DVR antes de aplicar o delay
+            if (player.getDuration() < 0) { 
+              player.seek(-30); 
+            }
+          } catch(e) {}
+        }, 1000); // Aguarda 1 segundo para o player estabilizar o manifesto
+      },
+      
+      
+      
+      onError: function () {
+        errorCount++;
+        reconnectMsg.style.display = "block";
+
+        if (errorCount < 4) {
+          setTimeout(function () {
+            tocarCanal(canalAtual);
+          }, 3000);
+        } else {
+          // Se errou 4 vezes ou mais: vai para o próximo canal da lista
+          canalAtual++; 
+          
+          // Se chegar ao fim da lista de canais, volta para o primeiro (0)
+          if (canalAtual >= canais.length) {
+            canalAtual = 0;
+          }
+          
+          tocarCanal(canalAtual);
+          errorCount = 0;
+        }
+      },
+      onIdle: function (e) {
+        if (e.reason === "error") {
+          errorCount++; // Soma no contador também quando o player ficar parado por erro
+          
+          if (errorCount < 4) {
+            tocarCanal(canalAtual);
+          } else {
+            // Se falhar 4 vezes no total, também pula para o próximo canal
+            canalAtual++;
+            if (canalAtual >= canais.length) {
+              canalAtual = 0;
+            }
+            tocarCanal(canalAtual);
+            errorCount = 0;
+          }
+        }
+      }
+    }
+  });
+
+  renderLista();
+}
+
+/* ===== TOCAR CANAL ===== */
+function tocarCanal(i) {
+  canalAtual = i;
+  reconnectMsg.style.display = "none";
+
+  player.stop();
+  player.load({ file: canais[i].file });
+  player.play();
+
+  // FULLSCREEN NATIVO
+  setTimeout(function () {
+    try { player.setFullscreen(true); } catch (e) {}
+  }, 300);
+
+  renderLista();
+}
+
+/* START */
+carregarM3U(M3U_URL, function (lista) {
+  canais = lista;
+  iniciarPlayer();
+});
+</script>
+
+</body>
+</html>
+
+
+<div class="imagem-fixada">GUIA TV:<br>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmi4ezxLy54BEXdVl3wKzF1lYZpBtCdmE_tWxM5igp-LsfvZ6UDPV4xwH1dQMAb17BOVH4N0Rx6bHRZYLZW2trlhOVBD1808luyhSxIx8Av5EvF-rbZr5gnFpZTRDQZSUj0olpFfqCDZmn2IiqhNbvkpkP-TpPSwTSVFaVVAzPdI6t3QiZ2ySIGzC8M_U/s450/qrcode_canaissattv.blogspot.com_epg_aberta.png" alt=" QR Code">
+    </div> 
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CANAIS - SMARTTV</title>
+
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* APP */
+#app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* LISTA */
+#lista {
+  width: 1050px;
+  height: 400px;
+  background: #111;
+  color: #fff;
+  overflow-y: auto;
+}
+
+#lista ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#lista li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+#lista li:hover {
+  background: #333;
+}
+
+#lista li.ativo {
+  background: #1e90ff;
+}
+
+/* PLAYER */
+#player-area {
+  position: fixed;
+      top: 10px;
+      right: 10px;
+      min-width: 400px !important;
+      width: 400px;
+      height: 380px;
+      z-index: 3000;
+      background: #000 !important;
+      display: block !important;
+}
+
+#player {
+  width: 100%;
+  height: 380px;
+  background: #000;
+}
+
+/* MENSAGEM */
+#reconnect-message {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 10px;
+  display: none;
+  z-index: 10;
+}
+</style>
+</head>
+
+<body>
+
+<div id="app">
+  <div id="lista">
+    <ul id="canais"></ul>
+  </div>
+
+  <div id="player-area">
+    <div id="player">Carregando…</div>
+    <div id="reconnect-message">🔄 Reconectando…</div>
+  </div>
+</div>
+
+
+<script src="https://rdc1793.github.io/canaisiptv/jwplayer.js"></script>
+<script>
+jwplayer.key = "B/yOGRlIMkFUoB0ucF8n4MOBh/SHV6t2TjRDU5TzVfI=";
+</script>
+
+<script>
+/* CONFIG */
+var M3U_URL = "https://rdc1793.github.io/canaisiptv/listch.m3u";
+
+/* ESTADO */
+var canais = [];
+var canalAtual = -1;
+var player;
+var errorCount = 0;
+
+/* ELEMENTOS */
+var ul = document.getElementById("canais");
+var reconnectMsg = document.getElementById("reconnect-message");
+
+/* ===== M3U ===== */
+function carregarM3U(url, cb) {
+  var x = new XMLHttpRequest();
+  x.open("GET", url, true);
+  x.onreadystatechange = function () {
+    if (x.readyState === 4 && x.status === 200) {
+      cb(parseM3U(x.responseText));
+    }
+  };
+  x.send();
+}
+
+function parseM3U(txt) {
+  var linhas = txt.split("\n");
+  var lista = [];
+  var nome = "Canal";
+
+  for (var i = 0; i < linhas.length; i++) {
+    var l = linhas[i].trim();
+    if (l.indexOf("#EXTINF") === 0) {
+      nome = l.split(",").pop();
+    } else if (l.indexOf("http") === 0) {
+      lista.push({ title: nome, file: l });
+    }
+  }
+  return lista;
+}
+
+/* ===== LISTA ===== */
+function renderLista() {
+  ul.innerHTML = "";
+
+  for (var i = 0; i < canais.length; i++) {
+    (function (i) {
+      var li = document.createElement("li");
+      li.innerHTML = canais[i].title;
+      if (i === canalAtual) li.className = "ativo";
+      li.onclick = function () {
+        tocarCanal(i);
+      };
+      ul.appendChild(li);
+    })(i);
+  }
+}
+
+/* ===== PLAYER ===== */
+function iniciarPlayer() {
+  player = jwplayer("player").setup({
+    file: canais[0].file,
+    width: "100%",
+    height: 380,
+    autostart: true,
+    controls: true,
+    hlshtml: true,
+    preload: "none",
+    stretching: "uniform"
+  });
+
+  canalAtual = 0;
+  renderLista();
+}
+
+function tocarCanal(i) {
+  canalAtual = i;
+  reconnectMsg.style.display = "none";
+
+  player.stop();
+  player.load({ file: canais[i].file });
+  player.play();
+
+  // 👉 FULLSCREEN NATIVO DO JW PLAYER
+  setTimeout(function () {
+    try {
+      player.setFullscreen(true);
+    } catch (e) {}
+  }, 300);
+
+  renderLista();
+}
+
+/* START */
+carregarM3U(M3U_URL, function (lista) {
+  canais = lista;
+  iniciarPlayer();
+});
+</script>
+
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function apagarTodasAsMarcas() {
+    // 1. Limpa o LocalStorage (tokens, logins modernos e preferências)
+    localStorage.clear();
+
+    // 2. Limpa o SessionStorage (dados da aba atual)
+    sessionStorage.clear();
+
+    // 3. Limpa todos os Cookies de forma agressiva
+    const cookies = document.cookie.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i];
+        const eqPos = cookie.indexOf("=");
+        const nome = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+        
+        // Remove o cookie testando diferentes caminhos e domínios comuns
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window.location.hostname;
+        document.cookie = nome + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
+    }
+    console.log("Todas as marcas locais foram apagadas.");
+}
+
+// Executa a limpeza assim que a página carrega
+window.addEventListener('load', apagarTodasAsMarcas);
+
+// Executa a limpeza preventiva quando o usuário sai ou atualiza a página
+window.addEventListener('beforeunload', apagarTodasAsMarcas);
+  
+  // Detecta se o usuário voltou usando as setas do navegador (Histórico/Cache)
+window.addEventListener('pageshow', function(event) {
+    // Se event.persisted for verdadeiro, significa que a página veio do cache "Voltar"
+    if (event.persisted) {
+        apagarTodasAsMarcas();    // Executa a limpeza dos dados
+        window.location.reload(); // Força a página a recarregar do zero
+    }
+});
+  
+</script>
+
+
+
+
